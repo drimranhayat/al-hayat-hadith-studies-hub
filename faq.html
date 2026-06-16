@@ -3,107 +3,772 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FAQ / عام سوالات | الحیات مرکزِ مطالعۂ حدیث</title>
-  <meta name="description" content="Frequently asked questions about the Hadith Studies Hub.">
-  <meta property="og:title" content="FAQ / عام سوالات | الحیات مرکزِ مطالعۂ حدیث">
-  <meta property="og:description" content="Frequently asked questions about the Hadith Studies Hub.">
+  <title>عام سوالات | الحیات مرکزِ مطالعۂ حدیث</title>
+  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث کے عام سوالات: ویب سائیٹ کے استعمال، حدیثی مصادر، صحت و ضعف، موضوع روایات، تخریج، تدریس، تحقیق، اصلاح اور رابطہ سے متعلق واضح رہنمائی۔">
+  <meta name="keywords" content="حدیث سوالات, علوم حدیث FAQ, صحیح حدیث, ضعیف حدیث, موضوع حدیث, تخریج, حدیث تحقیق, حدیث تدریس, Al-Hayat Hadith FAQ">
+  <meta name="author" content="Dr Imran Hayat Malik">
+  <meta name="theme-color" content="#0b2742">
+  <meta property="og:title" content="عام سوالات | الحیات مرکزِ مطالعۂ حدیث">
+  <meta property="og:description" content="حدیث اور علومِ حدیث کے مطالعے، مصادر، تحقیق، تدریس اور استعمال سے متعلق عام سوالات۔">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ur_PK">
-  <meta name="theme-color" content="#10253f">
-  <link rel="canonical" href="faq.html">
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-hadith-studies-hub/faq.html">
   <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "عام سوالات",
+    "url": "https://drimranhayat.github.io/al-hayat-hadith-studies-hub/faq.html",
+    "inLanguage": "ur",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "یہ ویب سائیٹ کس مقصد کے لیے ہے؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "یہ ویب سائیٹ حدیث نبوی ﷺ اور علومِ حدیث کے مستند، منظم اور ذمہ دارانہ اردو مطالعے کے لیے بنائی گئی ہے۔"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "کیا یہ ویب سائیٹ فتویٰ دیتی ہے؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نہیں، یہ علمی اور تعلیمی رہنمائی کا مرکز ہے؛ ذاتی شرعی مسئلے یا فتویٰ کے لیے اہلِ علم سے رجوع کیا جائے۔"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "حدیث کے حکم میں ویب سائیٹ کا منہج کیا ہے؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "حدیث کے حکم میں معتبر محدثین، محققین اور معروف مصادر کی آرا حوالہ کے ساتھ نقل کی جائیں گی؛ اپنی طرف سے مستقل حکم لگانے کا دعویٰ نہیں کیا جائے گا۔"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#0b2742;
+      --navy-2:#123b56;
+      --teal:#0f766e;
+      --teal-2:#0b8b72;
+      --gold:#c69a3d;
+      --cream:#f8f4e9;
+      --cream-2:#fffdf6;
+      --paper:#ffffff;
+      --ink:#102033;
+      --muted:#66788d;
+      --line:rgba(18,59,86,.13);
+      --shadow:0 12px 28px rgba(16,37,63,.10);
+      --font-urdu-heading:"Jameel Noori Nastaleeq","Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-urdu-body:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-ui:"Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;
+      --font-arabic:"Amiri","Scheherazade New","Noto Naskh Arabic",serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background-color:var(--cream);
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(198,154,61,.15) 1px, transparent 0),
+        linear-gradient(180deg,#fffdf6 0%,#f7f1e5 100%);
+      background-size:18px 18px, auto;
+      color:var(--ink);
+      font-family:var(--font-urdu-body);
+      font-size:17px;
+      line-height:2.05;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgba(198,154,61,.85);outline-offset:3px}
+    .container{width:min(1100px,calc(100% - 28px));margin-inline:auto}
+    .skip-link{position:absolute;right:16px;top:-60px;background:#fff;color:#111;padding:10px 14px;border-radius:12px;z-index:50}
+    .skip-link:focus{top:12px}
+
+    .topbar{
+      background:rgba(255,253,246,.97);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:40;
+      backdrop-filter:blur(12px);
+      box-shadow:0 6px 18px rgba(16,37,63,.05);
+    }
+    .topbar-inner{
+      min-height:84px;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:16px;
+    }
+    .brand-ur{
+      justify-self:start;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .brand-en{
+      justify-self:end;
+      direction:ltr;
+      text-align:left;
+      color:var(--navy);
+      font:800 1rem/1.25 var(--font-ui);
+      letter-spacing:.01em;
+      white-space:nowrap;
+    }
+    .brand-en small{
+      display:block;
+      color:var(--muted);
+      font:600 .78rem/1.2 var(--font-ui);
+      margin-top:2px;
+    }
+    .brand-mark{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:
+        radial-gradient(circle at 35% 28%,rgba(255,255,255,.30),transparent 22%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:#fff;
+      box-shadow:0 10px 22px rgba(11,39,66,.22);
+      border:1px solid rgba(198,154,61,.38);
+      position:relative;
+      overflow:hidden;
+    }
+    .brand-mark svg{
+      width:36px;
+      height:36px;
+      display:block;
+      fill:none;
+      stroke:#f4d082;
+      stroke-width:1.75;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));
+    }
+    .brand-title{
+      display:block;
+      font-family:var(--font-urdu-heading);
+      font-size:1.42rem;
+      line-height:1.35;
+      color:var(--navy);
+      letter-spacing:-.03em;
+      white-space:nowrap;
+    }
+    .brand-subtitle{
+      display:block;
+      color:var(--muted);
+      font:700 .82rem/1.3 var(--font-ui);
+      margin-top:2px;
+    }
+    .nav-toggle{display:none}
+    .primary-nav{
+      grid-column:1 / -1;
+      display:flex;align-items:center;gap:4px;justify-content:center;
+      font-family:var(--font-ui);
+      padding-top:6px;
+      padding-bottom:6px;
+      border-top:1px solid rgba(18,59,86,.08);
+    }
+    .nav-link,.more-trigger{
+      border:0;background:transparent;cursor:pointer;
+      padding:8px 12px;border-radius:999px;
+      font:800 .95rem/1.35 var(--font-ui);
+      color:var(--navy);
+      transition:.2s ease;
+      white-space:nowrap;
+    }
+    .nav-link:hover,.nav-link.is-active,.more-trigger:hover{
+      background:#eef5ef;color:#08705f;transform:translateY(-1px);
+    }
+    .more-menu{position:relative}
+    .more-panel{
+      position:absolute;top:calc(100% + 8px);left:0;
+      width:230px;background:#fff;border:1px solid var(--line);
+      border-radius:16px;box-shadow:var(--shadow);padding:8px;display:none;z-index:20;
+    }
+    .more-menu:hover .more-panel,.more-menu:focus-within .more-panel{display:grid}
+    .more-panel a{padding:8px 10px;border-radius:12px;font:700 .9rem/1.5 var(--font-ui)}
+    .more-panel a:hover{background:#f8f4e9;color:#8b6418}
+
+    .page-hero{
+      background:
+        radial-gradient(circle at 13% 30%,rgba(198,154,61,.22),transparent 28%),
+        linear-gradient(135deg,#0b2742 0%,#123b56 57%,#07836d 100%);
+      color:#fff;
+      padding:56px 0 50px;
+      border-bottom:1px solid rgba(11,39,66,.15);
+    }
+    .breadcrumb{margin:0 0 10px;color:#d6e8ec;font:700 .88rem/1.5 var(--font-ui)}
+    .breadcrumb a{color:#f1cf80}
+    .eyebrow{
+      display:inline-block;
+      color:#f0c970;
+      font:700 .82rem/1.5 var(--font-ui);
+      letter-spacing:.02em;
+      margin-bottom:8px;
+    }
+    h1,h2,h3{
+      margin:0;
+      font-family:var(--font-urdu-heading);
+      color:inherit;
+      letter-spacing:-.03em;
+      line-height:1.65;
+    }
+    h1{font-size:clamp(2.15rem,4.8vw,4.05rem);margin-bottom:10px}
+    .lead{
+      margin:0;
+      color:#edf6f6;
+      font-size:clamp(1.05rem,1.8vw,1.45rem);
+      line-height:2.15;
+      max-width:820px;
+    }
+
+    .quick{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .quick a{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:5px;
+      min-width:100px;
+      text-align:center;
+      padding:8px 11px;
+      font:700 .88rem/1.4 var(--font-ui);
+      box-shadow:0 6px 16px rgba(16,37,63,.06);
+      transition:.2s ease;
+    }
+    .quick a:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+
+    .section{padding:48px 0}
+    .section + .section{border-top:1px solid rgba(198,154,61,.15)}
+    .section-heading{text-align:center;margin-bottom:22px}
+    .section-heading .eyebrow{color:var(--gold)}
+    .section-heading h2{font-size:clamp(1.65rem,3vw,2.45rem);color:var(--navy)}
+    .section-heading p{
+      margin:4px auto 0;
+      max-width:760px;
+      color:var(--muted);
+      font-size:.95rem;
+      line-height:1.9;
+    }
+
+    .faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:start}
+    .side-card,.faq-card,.panel{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+    }
+    .side-card{padding:20px;position:sticky;top:128px}
+    .side-card h2{font-size:1.75rem;color:var(--navy)}
+    .side-card p{margin:7px 0 0;color:#56697e;font-size:.92rem;line-height:1.9}
+    .side-card nav{display:grid;gap:8px;margin-top:14px}
+    .side-card a{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 10px;
+      font:800 .88rem/1.55 var(--font-ui);
+      color:#31485f;
+      transition:.2s ease;
+    }
+    .side-card a:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+
+    .faq-group{display:grid;gap:12px}
+    .faq-title{font-size:2rem;color:var(--navy);margin:8px 0 4px}
+    .faq-card{overflow:hidden}
+    .faq-card summary{
+      cursor:pointer;
+      list-style:none;
+      padding:14px 16px;
+      color:var(--navy);
+      font:900 1.02rem/1.7 var(--font-ui);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      background:#fff;
+    }
+    .faq-card summary::-webkit-details-marker{display:none}
+    .faq-card summary::after{
+      content:"+";
+      width:28px;height:28px;border-radius:50%;
+      background:#fbf3de;
+      color:#9a6d18;
+      display:grid;place-items:center;
+      flex:0 0 auto;
+      font:900 1.1rem/1 var(--font-ui);
+    }
+    .faq-card[open] summary{background:#fbf7ec;border-bottom:1px solid #eadfca}
+    .faq-card[open] summary::after{content:"–";background:var(--teal);color:#fff}
+    .answer{padding:0 16px 15px;color:#50647b;line-height:2}
+    .answer p{margin:10px 0 0}
+    .answer ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:7px}
+    .answer li{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:7px 10px;
+      font:700 .88rem/1.7 var(--font-ui);
+      color:#31485f;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:13px;
+    }
+    .mini-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      min-height:165px;
+      padding:16px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      transition:.22s ease;
+      display:block;
+    }
+    .mini-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(16,37,63,.13);border-color:rgba(198,154,61,.55)}
+    .tag{
+      display:inline-block;
+      padding:2px 7px;
+      border-radius:99px;
+      background:#fbf3de;
+      color:#9a6d18;
+      font:700 .68rem/1.6 var(--font-ui);
+      margin-bottom:6px;
+    }
+    .mini-card h3{font-size:1.26rem;color:var(--navy)}
+    .mini-card p{margin:5px 0 0;color:#56697e;font-size:.86rem;line-height:1.8}
+    .see{display:inline-block;margin-top:8px;color:#0b806d;font:700 .82rem var(--font-ui)}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .panel{padding:22px}
+    .panel h2{font-size:2rem;color:var(--navy)}
+    .panel p{margin:8px 0 0;color:#50647b;line-height:2}
+    .arabic-text{
+      font-family:var(--font-arabic);
+      font-size:1.22rem;
+      line-height:2.2;
+      color:#123b56;
+      background:#fbf7ec;
+      border-right:3px solid var(--gold);
+      padding:10px 14px;
+      margin-top:12px;
+    }
+    .contact-strip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .contact-strip strong{
+      color:var(--navy);
+      font-family:var(--font-urdu-heading);
+      font-size:1.45rem;
+    }
+    .contact-strip a{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 12px;
+      font:800 .9rem/1.4 var(--font-ui);
+      direction:ltr;
+      text-align:left;
+    }
+
+    .footer{
+      background:#0b2742;
+      color:#dbe7ef;
+      padding:34px 0;
+      margin-top:35px;
+    }
+    .footer-grid{display:grid;grid-template-columns:1.1fr .8fr .8fr .9fr;gap:22px}
+    .footer h2{font-size:1.55rem;color:#fff}
+    .footer p,.footer a{color:#c7d7e2;font-size:.9rem;line-height:2}
+    .footer a{display:block;font-family:var(--font-ui)}
+    .footer .ltr{direction:ltr;text-align:left}
+    .chat-bubble,.floating-chat,.ai-widget,.purple-widget{display:none!important}
+    .back-to-top{
+      position:fixed;left:16px;bottom:16px;
+      width:40px;height:40px;border:0;border-radius:7px;
+      background:var(--gold);color:#172437;font:900 1.05rem var(--font-ui);
+      cursor:pointer;box-shadow:var(--shadow);
+    }
+
+    @media(max-width:960px){
+      .primary-nav{display:none}
+      .nav-toggle{
+        display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);
+        background:#fff;border-radius:6px;font-size:1.15rem;color:var(--navy)
+      }
+      .faq-wrap,.two-col{grid-template-columns:1fr}
+      .side-card{position:static}
+      .card-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      body{font-size:16px}
+      .topbar-inner{grid-template-columns:1fr auto;min-height:66px}
+      .brand-en{display:none}
+      .brand-title{font-size:1.05rem}
+      .brand-subtitle{display:none}
+      .brand-mark{width:42px;height:42px;justify-self:end}
+      .brand-mark svg{width:28px;height:28px}
+      .nav-toggle{grid-column:2}
+      .page-hero{padding:34px 0}
+      .card-grid{grid-template-columns:1fr}
+      .quick a{min-width:auto;flex:1 1 120px}
+      .section{padding:36px 0}
+      .faq-card summary{font-size:.95rem}
+    }
+  </style>
 </head>
 <body data-current="faq">
-<header class="site-header">
   <a class="skip-link" href="#main">مرکزی مواد پر جائیں</a>
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
-      <span class="brand-mark">ح</span>
-      <span class="brand-text"><strong>الحیات مرکزِ مطالعۂ حدیث</strong><small>Al-Hayat Hadith Studies Hub</small></span>
-    </a>
-    <button class="icon-button nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="مینو کھولیں">☰</button>
-    <nav class="primary-nav" id="primaryNav" aria-label="مرکزی نیویگیشن">
-      <a href="index.html" class="nav-link">ہوم</a>
-<a href="books.html" class="nav-link">کتبِ حدیث</a>
-<a href="hadith-sciences.html" class="nav-link">علومِ حدیث</a>
-<a href="topic-index.html" class="nav-link">موضوعات</a>
-<a href="search.html" class="nav-link">تلاش</a>
-<a href="glossary.html" class="nav-link">Glossary</a>
-<a href="mcqs/" class="nav-link">کوئز</a>
-<a href="verification-lab/" class="nav-link">Verification Lab</a>
-<a href="dashboard.html" class="nav-link">Dashboard</a>
-<a href="academic-policy.html" class="nav-link">Policy</a>
-      <div class="mega">
-        <button class="mega-trigger" type="button" aria-expanded="false">نصاب</button>
-        <div class="mega-panel" role="group" aria-label="اہم ابواب">
-          <a href="sahih-hadith/"><span>صحیح حدیث</span><small>Level 3</small></a>
-<a href="daeef-hadith/"><span>ضعیف حدیث</span><small>Level 3</small></a>
-<a href="takhrij-hadith/"><span>تخریج الحدیث</span><small>Level 6</small></a>
-<a href="jarh-tadeel/"><span>الجرح والتعدیل</span><small>Level 5</small></a>
-<a href="ilal-hadith/"><span>علل الحدیث</span><small>Level 5</small></a>
-<a href="responsibility-engine/"><span>ذمہ دارانہ استعمال</span><small>Level 1</small></a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-ur" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
+        <span>
+          <strong class="brand-title">الحیات مرکزِ مطالعۂ حدیث</strong>
+          <small class="brand-subtitle">حدیث و علومِ حدیث کا اردو مرکز</small>
+        </span>
+      </a>
+
+      <a class="brand-mark" href="index.html" aria-label="Al-Hayat Hadith Studies Hub">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M18 14h20a8 8 0 0 1 8 8v28H24a8 8 0 0 0-6 2.7V14z"/>
+          <path d="M46 22h3a7 7 0 0 1 7 7v25H31a7 7 0 0 0-7 3"/>
+          <path d="M25 25h13M25 33h13M25 41h9"/>
+          <path d="M12 20c-3.7 2.8-5.5 6.3-5.5 10.5 0 5.8 3.5 10 8.5 12"/>
+        </svg>
+      </a>
+
+      <div class="brand-en">
+        Al-Hayat Hadith Studies Hub
+        <small>Hadith · Sources · Research</small>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="مینو کھولیں">☰</button>
+      <nav class="primary-nav" aria-label="مرکزی نیویگیشن">
+        <a class="nav-link" href="index.html">ہوم</a>
+        <a class="nav-link" href="topic-index.html">موضوعات</a>
+        <a class="nav-link" href="books-catalog.html">کتب و مصادر</a>
+        <a class="nav-link" href="glossary.html">اصطلاحات</a>
+        <a class="nav-link" href="search.html">تلاش</a>
+        <a class="nav-link" href="source-policy.html">مصادر کا منہج</a>
+        <div class="more-menu">
+          <button class="more-trigger is-active" type="button">مزید فہرست</button>
+          <div class="more-panel">
+            <a href="academic-policy.html">علمی اصول</a>
+            <a href="templates.html">تعلیمی و تحقیقی سانچے</a>
+            <a href="dashboard.html">میری پیش رفت</a>
+            <a href="faq.html">عام سوالات</a>
+            <a href="about.html">ہمارا تعارف</a>
+            <a href="contact.html">رابطہ</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ہوم</a> / عام سوالات</p>
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h1>عام سوالات</h1>
+        <p class="lead">یہ صفحہ ویب سائیٹ کے مقصد، استعمال، حدیثی مصادر، صحت و ضعف، موضوع روایات، تحقیق، تدریس، اصلاح اور رابطہ سے متعلق عام سوالات کا واضح اور ذمہ دارانہ جواب فراہم کرتا ہے۔</p>
+      </div>
+    </section>
+
+    <nav class="container quick" aria-label="فوری روابط">
+      <a href="#site">ویب سائیٹ</a>
+      <a href="#sources">مصادر</a>
+      <a href="#grading">حکم حدیث</a>
+      <a href="#study">مطالعہ</a>
+      <a href="#teaching">تدریس</a>
+      <a href="#correction">اصلاح</a>
+    </nav>
+
+    <section class="section">
+      <div class="container faq-wrap">
+        <aside class="side-card">
+          <span class="eyebrow">FAQ MAP</span>
+          <h2>سوالات کی فہرست</h2>
+          <p>جس حصے کی ضرورت ہو، براہِ راست اسی category پر جائیں۔ ہر جواب مختصر مگر علمی احتیاط کے ساتھ لکھا گیا ہے۔</p>
+          <nav aria-label="FAQ categories">
+            <a href="#site">ویب سائیٹ اور مقصد</a>
+            <a href="#sources">مصادر اور حوالہ</a>
+            <a href="#grading">صحت، ضعف اور حکم</a>
+            <a href="#study">مطالعہ کا آغاز</a>
+            <a href="#teaching">استاد، خطیب اور تحقیق</a>
+            <a href="#correction">رابطہ اور اصلاح</a>
+          </nav>
+        </aside>
+
+        <div class="faq-group">
+          <h2 id="site" class="faq-title">ویب سائیٹ اور مقصد</h2>
+
+          <details class="faq-card" open>
+            <summary>یہ ویب سائیٹ کس مقصد کے لیے بنائی گئی ہے؟</summary>
+            <div class="answer">
+              <p>یہ مرکز حدیث نبوی ﷺ اور علومِ حدیث کے مستند، منظم، باوقار اور ذمہ دارانہ اردو مطالعے کے لیے بنایا گیا ہے۔ مقصد یہ ہے کہ عام قاری، طالب علم، استاد، خطیب اور محقق اپنی سطح کے مطابق صحیح راستہ اختیار کر سکیں۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا یہ ویب سائیٹ صرف عوام کے لیے ہے یا طلبہ و محققین کے لیے بھی؟</summary>
+            <div class="answer">
+              <p>یہ ویب سائیٹ سطح وار بنائی جا رہی ہے: عام قاری کے لیے آسان تعارف، طالب علم کے لیے بنیادی اصطلاحات، استاد و خطیب کے لیے تدریسی رہنمائی، اور محقق کے لیے تخریج، رجال، علل اور مصادر کا منظم مواد۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا یہ ویب سائیٹ فتویٰ دیتی ہے؟</summary>
+            <div class="answer">
+              <p>نہیں۔ یہ علمی، تعلیمی اور تحقیقی رہنمائی کا مرکز ہے۔ ذاتی شرعی مسئلے، فتویٰ، یا عملی اختلافی معاملے میں مستند اہلِ علم اور دارالافتاء سے رجوع کیا جائے۔</p>
+            </div>
+          </details>
+
+          <h2 id="sources" class="faq-title">مصادر اور حوالہ</h2>
+
+          <details class="faq-card">
+            <summary>مواد کن مصادر کی بنیاد پر تیار کیا جائے گا؟</summary>
+            <div class="answer">
+              <p>مواد کی تیاری میں اصل کتبِ حدیث، معتبر شروح، کتبِ مصطلح، رجال، علل، تخریج، محقق مطبوعات، مکتبہ شاملہ، مکتبہ وقفیہ، کتاب و سنت اور دیگر معتبر علمی ذخائر سے رہنمائی لی جائے گی۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا ہر حدیث کے ساتھ حوالہ دیا جائے گا؟</summary>
+            <div class="answer">
+              <p>حدیثی مواد میں اصل کوشش یہی ہوگی کہ مصدر، کتاب/باب، رقمِ حدیث یا جلد/صفحہ، اور جہاں ضروری ہو طباعت یا تحقیق کا ذکر کیا جائے۔ ابتدائی صفحات میں summaries ہو سکتی ہیں، مگر تحقیقی صفحات حوالہ جاتی انداز میں بنائے جائیں گے۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>اگر کسی حوالہ میں اختلاف ہو تو کیا کیا جائے گا؟</summary>
+            <div class="answer">
+              <p>حدیثی numbering اور طبعات میں اختلاف ہو سکتا ہے۔ ایسی جگہ اصل کتاب، باب، متن کے ابتدائی الفاظ، اور edition/تحقیق کا ذکر زیادہ مفید ہوگا۔ جہاں ضرورت ہو، اختلافی references کو واضح کیا جائے گا۔</p>
+            </div>
+          </details>
+
+          <h2 id="grading" class="faq-title">صحت، ضعف اور حکمِ حدیث</h2>
+
+          <details class="faq-card">
+            <summary>کیا ویب سائیٹ خود حدیث کو صحیح یا ضعیف قرار دے گی؟</summary>
+            <div class="answer">
+              <p>یہ مرکز اپنی طرف سے مستقل حکم لگانے کا دعویٰ نہیں کرے گا۔ صحت، حسن، ضعف، علت یا وضع کے بارے میں معتبر محدثین، محققین اور معروف مصادر کی آرا حوالہ کے ساتھ نقل کی جائیں گی۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>ضعیف حدیث کا مطلب کیا ہوتا ہے؟</summary>
+            <div class="answer">
+              <p>ضعیف حدیث وہ روایت ہے جس میں قبول کی شرائط میں سے کوئی شرط مکمل نہ پائی جائے، مثلاً سند کا اتصال، راوی کی عدالت یا ضبط، شذوذ یا علت سے سلامتی وغیرہ۔ ضعف کے درجات مختلف ہو سکتے ہیں، اس لیے ہر ضعیف روایت کو ایک ہی حکم میں نہیں رکھا جاتا۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>موضوع روایت سے کیا مراد ہے؟</summary>
+            <div class="answer">
+              <p>موضوع روایت سے مراد ایسی من گھڑت روایت ہے جو رسول اللہ ﷺ کی طرف ناحق منسوب کی گئی ہو۔ اس کی نسبت بہت سنگین معاملہ ہے، اس لیے مشہور روایات بھی بغیر تحقیق کے آگے نہیں پھیلانی چاہییں۔</p>
+              <p class="arabic-text">مَنْ كَذَبَ عَلَيَّ مُتَعَمِّدًا فَلْيَتَبَوَّأْ مَقْعَدَهُ مِنَ النَّارِ</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>اگر ایک حدیث پر علماء کے مختلف احکام ہوں تو کیا ہوگا؟</summary>
+            <div class="answer">
+              <p>ایسی صورت میں اختلاف کو چھپایا نہیں جائے گا بلکہ علمی انداز میں بتایا جائے گا کہ کن اہلِ علم نے کیا حکم دیا، اختلاف کی وجہ کیا ہو سکتی ہے، اور عام قاری یا خطیب کے لیے احتیاطی راستہ کیا ہے۔</p>
+            </div>
+          </details>
+
+          <h2 id="study" class="faq-title">مطالعہ کا آغاز</h2>
+
+          <details class="faq-card">
+            <summary>نیا قاری کہاں سے آغاز کرے؟</summary>
+            <div class="answer">
+              <p>نیا قاری پہلے “حدیث کا تعارف”، پھر “حجیتِ حدیث”، پھر “سند اور متن”، پھر “مصطلح الحدیث” اور بعد میں “کتب و مصادر” کا مطالعہ کرے۔ اس ترتیب سے ذہن میں بنیادی نقشہ واضح ہو جائے گا۔</p>
+              <ul>
+                <li><a href="hadith-introduction/">حدیث کا تعارف</a></li>
+                <li><a href="hujjiyat-hadith/">حجیتِ حدیث</a></li>
+                <li><a href="sanad-matn/">سند اور متن</a></li>
+                <li><a href="mustalah-hadith/">مصطلح الحدیث</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا صرف glossary پڑھنا کافی ہے؟</summary>
+            <div class="answer">
+              <p>Glossary اصطلاحات سمجھنے میں مدد دیتی ہے، مگر مکمل فہم کے لیے متعلقہ ابواب، مثالیں، مصادر اور اہلِ علم کے منہج کو ساتھ پڑھنا ضروری ہے۔ اصطلاح صرف لفظ نہیں بلکہ ایک علمی نظام کا حصہ ہوتی ہے۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا MCQs اور tests اصل مطالعے کا بدل ہیں؟</summary>
+            <div class="answer">
+              <p>نہیں۔ MCQs، short questions اور tests دہرائی اور self-check کے لیے ہیں۔ اصل مطالعہ definitions، مصادر، مثالوں، شروح اور علمی منہج کے ساتھ ہونا چاہیے۔</p>
+            </div>
+          </details>
+
+          <h2 id="teaching" class="faq-title">استاد، خطیب اور تحقیق</h2>
+
+          <details class="faq-card">
+            <summary>استاد یا خطیب اس ویب سائیٹ کو کیسے استعمال کرے؟</summary>
+            <div class="answer">
+              <p>استاد اور خطیب “Teacher & Khateeb Toolkit”، “Templates”، “Source Policy” اور متعلقہ حدیثی باب کو ساتھ استعمال کریں۔ خطبہ یا درس میں روایت کے درجے، سیاق، معنی اور عوامی اطلاق میں احتیاط رکھی جائے۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>تحقیق کرنے والا طالب علم کہاں جائے؟</summary>
+            <div class="answer">
+              <p>تحقیقی طالب علم پہلے موضوع کا عمومی نقشہ دیکھے، پھر مصادر، تخریج، رجال، جرح و تعدیل، علل اور citation templates کی طرف جائے۔ تحقیق میں جلدی نتیجہ نکالنے کے بجائے مصادر کا تقابل ضروری ہے۔</p>
+              <ul>
+                <li><a href="research-toolkit/">Research Toolkit</a></li>
+                <li><a href="takhrij-hadith/">تخریج الحدیث</a></li>
+                <li><a href="ilm-rijal/">علم الرجال</a></li>
+                <li><a href="ilal-hadith/">علل الحدیث</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>کیا ویب سائیٹ کا مواد کلاس میں استعمال کیا جا سکتا ہے؟</summary>
+            <div class="answer">
+              <p>تعلیمی استعمال کے لیے مواد سے رہنمائی لی جا سکتی ہے، مگر حوالہ، علمی دیانت اور اصل مصادر کی طرف رجوع کو قائم رکھا جائے۔ مواد کو سیاق سے کاٹ کر یا حدیث کے معنی سے آگے بڑھا کر استعمال نہ کیا جائے۔</p>
+            </div>
+          </details>
+
+          <h2 id="correction" class="faq-title">رابطہ اور اصلاح</h2>
+
+          <details class="faq-card">
+            <summary>اگر کسی صفحے میں غلطی نظر آئے تو کیا کریں؟</summary>
+            <div class="answer">
+              <p>اگر کسی حوالہ، عبارت، ترجمہ، link یا علمی نکتے میں اصلاح کی ضرورت محسوس ہو تو اصل مصدر یا واضح دلیل کے ساتھ رابطہ کریں۔ علمی اصلاح کو خوش دلی سے قبول کیا جائے گا۔</p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>رابطہ کیسے کیا جا سکتا ہے؟</summary>
+            <div class="answer">
+              <p>علمی تجویز، اصلاح، broken link یا عمومی رابطہ کے لیے phone/WhatsApp یا email استعمال کریں۔</p>
+              <ul>
+                <li><a href="tel:+923354910481">+92 335 4910481</a></li>
+                <li><a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a></li>
+              </ul>
+            </div>
+          </details>
         </div>
       </div>
-      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false">آواز بند</button>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <section class="page-hero compact section-pattern">
-    <div class="container">
-      <p class="breadcrumb"><a href="index.html">ہوم</a> / FAQ / عام سوالات</p>
-      <h1>FAQ / عام سوالات</h1>
-      <p>Frequently asked questions about the Hadith Studies Hub.</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">HELPFUL LINKS</span>
+          <h2>اگلے مفید صفحات</h2>
+          <p>FAQ پڑھنے کے بعد ان صفحات سے مطالعہ زیادہ منظم ہو جائے گا۔</p>
+        </div>
+        <div class="card-grid">
+          <a class="mini-card" href="topic-index.html"><span class="tag">اشاریہ</span><h3>موضوعات</h3><p>تمام ابواب اور folders کا جامع نقشہ۔</p><span class="see">کھولیں</span></a>
+          <a class="mini-card" href="source-policy.html"><span class="tag">منہج</span><h3>مصادر کا منہج</h3><p>حوالہ، تحقیق اور مواد کی تیاری کے اصول۔</p><span class="see">پڑھیں</span></a>
+          <a class="mini-card" href="templates.html"><span class="tag">سانچے</span><h3>تعلیمی و تحقیقی سانچے</h3><p>درس، خطبہ، تخریج اور تحقیق کے عملی formats۔</p><span class="see">دیکھیں</span></a>
+          <a class="mini-card" href="contact.html"><span class="tag">رابطہ</span><h3>رابطہ و اصلاح</h3><p>علمی تجویز، اصلاح یا broken link report کریں۔</p><span class="see">رابطہ کریں</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-strip">
+        <strong>رابطہ، اصلاح اور علمی تجاویز</strong>
+        <a href="tel:+923354910481">+92 335 4910481</a>
+        <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <a href="contact.html">رابطہ صفحہ کھولیں</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
+        <p>حدیث نبوی ﷺ کے مطالعے، فہم، حوالہ، تحقیق اور تدریس کے لیے ایک منظم اردو علمی پلیٹ فارم۔</p>
+      </section>
+      <section>
+        <h2>اہم روابط</h2>
+        <a href="topic-index.html">موضوعات</a>
+        <a href="books-catalog.html">کتب و مصادر</a>
+        <a href="glossary.html">اصطلاحات</a>
+        <a href="templates.html">سانچے</a>
+      </section>
+      <section>
+        <h2>علمی اصول</h2>
+        <a href="source-policy.html">مصادر کا منہج</a>
+        <a href="academic-policy.html">علمی اصول</a>
+        <a href="privacy.html">رازداری پالیسی</a>
+        <a href="terms.html">شرائطِ استعمال</a>
+      </section>
+      <section>
+        <h2>رابطہ و اصلاح</h2>
+        <a class="ltr" href="tel:+923354910481">+92 335 4910481</a>
+        <a class="ltr" href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <p>یہ مرکز علمی رہنمائی کے لیے ہے؛ فتویٰ یا ذاتی شرعی مسئلے میں اہلِ علم سے رجوع کیا جائے۔</p>
+      </section>
     </div>
-  </section>
-  <section class="container content-section readable">
-    <div class="accordion static-accordion">
-  <div class="accordion-item is-open"><button class="accordion-trigger" type="button" aria-expanded="true">کیا یہ site احادیث پر خود حکم لگاتی ہے؟</button><div class="accordion-panel"><p>نہیں۔ site معتبر محدثین، محققین، اور معروف مصادر کے حوالہ سے مواد پیش کرے گی۔</p></div></div>
-  <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false">کیا ابھی تمام scholarly content مکمل ہے؟</button><div class="accordion-panel" hidden><p>نہیں۔ جہاں مکمل تحقیق موجود نہیں وہاں واضح placeholder رکھا گیا ہے۔</p></div></div>
-  <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false">Progress کہاں محفوظ ہوتی ہے؟</button><div class="accordion-panel" hidden><p>First version میں progress صرف آپ کے browser کے localStorage میں محفوظ ہوتی ہے۔</p></div></div>
-  <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false">کیا audio autoplay ہے؟</button><div class="accordion-panel" hidden><p>نہیں۔ کوئی background audio یا autoplay نہیں۔ optional click sound off by default ہے۔</p></div></div>
-</div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <section>
-      <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
-      <p>حدیث کو پڑھیں، سمجھیں، پرکھیں، مشق کریں، اور ذمہ داری سے آگے پہنچائیں۔</p>
-    </section>
-    <section>
-      <h2>اہم روابط</h2>
-      <a href="topic-index.html">موضوعات</a>
-      <a href="books.html">کتبِ حدیث</a>
-      <a href="hadith-sciences.html">علومِ حدیث</a>
-      <a href="hadith-collections.html">مجموعات</a>
-      <a href="scholars.html">محدثین</a>
-      <a href="research.html">تحقیق</a>
-      <a href="references.html">مصادر</a>
-      <a href="search.html">تلاش</a>
-      <a href="glossary.html">Glossary</a>
-      <a href="mcqs/">کثیر الانتخابی سوالات</a>
-      <a href="verification-lab/">Verification Lab</a>
-      <a href="academic-policy.html">Academic Integrity Policy</a>
-      <a href="source-policy.html">Source Policy</a>
-      <a href="faq.html">FAQ</a>
-    </section>
-    <section>
-      <h2>علمی اصول</h2>
-      <p>ہم خود سے احادیث پر مستقل حکم نہیں لگاتے؛ مستند مصادر اور اہلِ علم کے حوالہ جات کے ساتھ مواد مرحلہ وار شامل کیا جائے گا۔</p>
-    </section>
-  </div>
-</footer>
-<button class="back-to-top" type="button" data-back-to-top aria-label="اوپر جائیں">↑</button>
-<script src="assets/data/topics.js"></script>
-<script src="assets/data/mcqs.js"></script>
-<script src="assets/data/study.js"></script>
-<script src="assets/data/glossary.js"></script>
-<script src="assets/data/books.js"></script>
-<script src="assets/data/templates.js"></script>
-<script src="assets/data/site.js"></script>
-<script src="assets/data/progress.js"></script>
-<script src="assets/js/script.js"></script>
+  </footer>
+
+  <button class="back-to-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="اوپر جائیں">↑</button>
+
+  <script>
+    (function(){
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.primary-nav');
+      if(toggle && nav){
+        toggle.addEventListener('click', function(){
+          const open = nav.style.display === 'flex';
+          nav.style.display = open ? 'none' : 'flex';
+          nav.style.position = 'absolute';
+          nav.style.top = '74px';
+          nav.style.left = '14px';
+          nav.style.right = '14px';
+          nav.style.background = '#fff';
+          nav.style.border = '1px solid rgba(18,59,86,.13)';
+          nav.style.borderRadius = '10px';
+          nav.style.padding = '10px';
+          nav.style.boxShadow = '0 12px 28px rgba(16,37,63,.10)';
+          nav.style.flexDirection = 'column';
+          nav.style.alignItems = 'stretch';
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
