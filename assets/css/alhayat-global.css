@@ -1,1 +1,42 @@
+/* Al-Hayat Hadith Studies Hub — Global Urdu Font Patch
+   Add this file at: /assets/css/alhayat-global.css
+   Then link it in every HTML file before </head>:
+   <link rel="stylesheet" href="assets/css/alhayat-global.css">
+*/
 
+:root{
+  --font-urdu:"Jameel Noori Nastaleeq","Jameel Noori Nastaleeq Kasheeda","Noto Nastaliq Urdu","Urdu Typesetting","Nafees Nastaleeq",serif;
+  --font-arabic:"Amiri","Traditional Arabic",serif;
+  --font-english:Georgia,"Times New Roman",serif;
+}
+
+html[lang="ur"],
+html[dir="rtl"],
+body,
+button,
+input,
+textarea,
+select,
+nav,
+.card,
+.panel,
+.hero,
+footer{
+  font-family:var(--font-urdu) !important;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+[lang="ar"],
+.arabic,
+.quran,
+.hadith-arabic{
+  font-family:var(--font-arabic) !important;
+}
+
+[dir="ltr"],
+.english,
+.en,
+.brand-title span{
+  font-family:var(--font-english) !important;
+}
