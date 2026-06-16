@@ -4,112 +4,655 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>رابطہ | الحیات مرکزِ مطالعۂ حدیث</title>
-  <meta name="description" content="Contact and contribution page for the Urdu Hadith learning hub.">
+  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث سے رابطہ کریں: علمی تجاویز، حوالہ جاتی اصلاح، broken links، مواد کی بہتری، تدریسی تعاون اور حدیثی مطالعہ سے متعلق رہنمائی کے لیے phone, WhatsApp اور email۔">
+  <meta name="keywords" content="الحیات رابطہ, حدیث ویب سائٹ رابطہ, Hadith contact, Urdu Hadith Studies, حدیث اصلاح, علمی تجاویز, Dr Imran Hayat Malik">
+  <meta name="author" content="Dr Imran Hayat Malik">
+  <meta name="theme-color" content="#0b2742">
   <meta property="og:title" content="رابطہ | الحیات مرکزِ مطالعۂ حدیث">
-  <meta property="og:description" content="Contact and contribution page for the Urdu Hadith learning hub.">
+  <meta property="og:description" content="علمی تجاویز، حوالہ جاتی اصلاح، broken links اور تدریسی تعاون کے لیے رابطہ۔">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ur_PK">
-  <meta name="theme-color" content="#10253f">
-  <link rel="canonical" href="contact.html">
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-hadith-studies-hub/contact.html">
   <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "رابطہ",
+    "url": "https://drimranhayat.github.io/al-hayat-hadith-studies-hub/contact.html",
+    "isPartOf": {
+      "@type": "EducationalOrganization",
+      "name": "الحیات مرکزِ مطالعۂ حدیث",
+      "alternateName": "Al-Hayat Hadith Studies Hub",
+      "url": "https://drimranhayat.github.io/al-hayat-hadith-studies-hub/",
+      "email": "drimranhayatmalik@gmail.com",
+      "telephone": "+923354910481"
+    },
+    "inLanguage": "ur"
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#0b2742;
+      --navy-2:#123b56;
+      --teal:#0f766e;
+      --teal-2:#0b8b72;
+      --gold:#c69a3d;
+      --cream:#f8f4e9;
+      --cream-2:#fffdf6;
+      --paper:#ffffff;
+      --ink:#102033;
+      --muted:#66788d;
+      --line:rgba(18,59,86,.13);
+      --shadow:0 12px 28px rgba(16,37,63,.10);
+      --font-urdu-heading:"Jameel Noori Nastaleeq","Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-urdu-body:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-ui:"Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;
+      --font-arabic:"Amiri","Scheherazade New","Noto Naskh Arabic",serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background-color:var(--cream);
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(198,154,61,.15) 1px, transparent 0),
+        linear-gradient(180deg,#fffdf6 0%,#f7f1e5 100%);
+      background-size:18px 18px, auto;
+      color:var(--ink);
+      font-family:var(--font-urdu-body);
+      font-size:17px;
+      line-height:2.05;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible{outline:3px solid rgba(198,154,61,.85);outline-offset:3px}
+    .container{width:min(1100px,calc(100% - 28px));margin-inline:auto}
+    .skip-link{position:absolute;right:16px;top:-60px;background:#fff;color:#111;padding:10px 14px;border-radius:12px;z-index:50}
+    .skip-link:focus{top:12px}
+
+    .topbar{
+      background:rgba(255,253,246,.97);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:40;
+      backdrop-filter:blur(12px);
+      box-shadow:0 6px 18px rgba(16,37,63,.05);
+    }
+    .topbar-inner{
+      min-height:84px;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:16px;
+    }
+    .brand-ur{
+      justify-self:start;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .brand-en{
+      justify-self:end;
+      direction:ltr;
+      text-align:left;
+      color:var(--navy);
+      font:800 1rem/1.25 var(--font-ui);
+      letter-spacing:.01em;
+      white-space:nowrap;
+    }
+    .brand-en small{
+      display:block;
+      color:var(--muted);
+      font:600 .78rem/1.2 var(--font-ui);
+      margin-top:2px;
+    }
+    .brand-mark{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:
+        radial-gradient(circle at 35% 28%,rgba(255,255,255,.30),transparent 22%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:#fff;
+      box-shadow:0 10px 22px rgba(11,39,66,.22);
+      border:1px solid rgba(198,154,61,.38);
+      position:relative;
+      overflow:hidden;
+    }
+    .brand-mark svg{
+      width:36px;
+      height:36px;
+      display:block;
+      fill:none;
+      stroke:#f4d082;
+      stroke-width:1.75;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));
+    }
+    .brand-title{
+      display:block;
+      font-family:var(--font-urdu-heading);
+      font-size:1.42rem;
+      line-height:1.35;
+      color:var(--navy);
+      letter-spacing:-.03em;
+      white-space:nowrap;
+    }
+    .brand-subtitle{
+      display:block;
+      color:var(--muted);
+      font:700 .82rem/1.3 var(--font-ui);
+      margin-top:2px;
+    }
+    .nav-toggle{display:none}
+    .primary-nav{
+      grid-column:1 / -1;
+      display:flex;align-items:center;gap:4px;justify-content:center;
+      font-family:var(--font-ui);
+      padding-top:6px;
+      padding-bottom:6px;
+      border-top:1px solid rgba(18,59,86,.08);
+    }
+    .nav-link,.more-trigger{
+      border:0;background:transparent;cursor:pointer;
+      padding:8px 12px;border-radius:999px;
+      font:800 .95rem/1.35 var(--font-ui);
+      color:var(--navy);
+      transition:.2s ease;
+      white-space:nowrap;
+    }
+    .nav-link:hover,.nav-link.is-active,.more-trigger:hover{
+      background:#eef5ef;color:#08705f;transform:translateY(-1px);
+    }
+    .more-menu{position:relative}
+    .more-panel{
+      position:absolute;top:calc(100% + 8px);left:0;
+      width:230px;background:#fff;border:1px solid var(--line);
+      border-radius:16px;box-shadow:var(--shadow);padding:8px;display:none;z-index:20;
+    }
+    .more-menu:hover .more-panel,.more-menu:focus-within .more-panel{display:grid}
+    .more-panel a{padding:8px 10px;border-radius:12px;font:700 .9rem/1.5 var(--font-ui)}
+    .more-panel a:hover{background:#f8f4e9;color:#8b6418}
+
+    .page-hero{
+      background:
+        radial-gradient(circle at 13% 30%,rgba(198,154,61,.22),transparent 28%),
+        linear-gradient(135deg,#0b2742 0%,#123b56 57%,#07836d 100%);
+      color:#fff;
+      padding:56px 0 50px;
+      border-bottom:1px solid rgba(11,39,66,.15);
+    }
+    .breadcrumb{margin:0 0 10px;color:#d6e8ec;font:700 .88rem/1.5 var(--font-ui)}
+    .breadcrumb a{color:#f1cf80}
+    .eyebrow{
+      display:inline-block;
+      color:#f0c970;
+      font:700 .82rem/1.5 var(--font-ui);
+      letter-spacing:.02em;
+      margin-bottom:8px;
+    }
+    h1,h2,h3{
+      margin:0;
+      font-family:var(--font-urdu-heading);
+      color:inherit;
+      letter-spacing:-.03em;
+      line-height:1.65;
+    }
+    h1{font-size:clamp(2.15rem,4.8vw,4.05rem);margin-bottom:10px}
+    .lead{
+      margin:0;
+      color:#edf6f6;
+      font-size:clamp(1.05rem,1.8vw,1.45rem);
+      line-height:2.15;
+      max-width:820px;
+    }
+
+    .quick{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .quick a{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:5px;
+      min-width:100px;
+      text-align:center;
+      padding:8px 11px;
+      font:700 .88rem/1.4 var(--font-ui);
+      box-shadow:0 6px 16px rgba(16,37,63,.06);
+      transition:.2s ease;
+    }
+    .quick a:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+
+    .section{padding:48px 0}
+    .section + .section{border-top:1px solid rgba(198,154,61,.15)}
+    .section-heading{text-align:center;margin-bottom:22px}
+    .section-heading .eyebrow{color:var(--gold)}
+    .section-heading h2{font-size:clamp(1.65rem,3vw,2.45rem);color:var(--navy)}
+    .section-heading p{
+      margin:4px auto 0;
+      max-width:760px;
+      color:var(--muted);
+      font-size:.95rem;
+      line-height:1.9;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:13px;
+    }
+    .contact-card,.panel,.note-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      transition:.22s ease;
+    }
+    .contact-card{
+      padding:18px;
+      min-height:180px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .contact-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 18px 34px rgba(16,37,63,.13);
+      border-color:rgba(198,154,61,.55);
+    }
+    .tag{
+      display:inline-block;
+      padding:2px 7px;
+      border-radius:99px;
+      background:#fbf3de;
+      color:#9a6d18;
+      font:700 .68rem/1.6 var(--font-ui);
+      margin-bottom:6px;
+    }
+    .contact-card h3{font-size:1.35rem;color:var(--navy)}
+    .contact-card p{margin:5px 0 0;color:#56697e;font-size:.88rem;line-height:1.8}
+    .contact-card .contact-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:12px;
+      background:var(--teal);
+      color:#fff;
+      border-radius:7px;
+      padding:9px 12px;
+      font:900 .9rem/1.4 var(--font-ui);
+      direction:ltr;
+      text-align:center;
+      transition:.2s ease;
+    }
+    .contact-card .contact-link:hover{background:var(--navy);transform:translateY(-2px)}
+    .contact-card .gold{background:var(--gold);color:#102033}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .panel,.note-box{padding:22px}
+    .panel h2,.note-box h2{font-size:2rem;color:var(--navy)}
+    .panel p,.note-box p{margin:8px 0 0;color:#50647b;line-height:2}
+    .plain-list{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+    .plain-list li{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 10px;
+      font:700 .9rem/1.7 var(--font-ui);
+      color:#31485f;
+    }
+
+    .message-template{
+      background:#fbf7ec;
+      border:1px solid #eadfca;
+      border-right:4px solid var(--gold);
+      border-radius:7px;
+      padding:14px;
+      margin-top:14px;
+      font:700 .9rem/2 var(--font-ui);
+      color:#31485f;
+      white-space:pre-line;
+    }
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:13px;
+    }
+    .mini-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      min-height:165px;
+      padding:16px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      transition:.22s ease;
+      display:block;
+    }
+    .mini-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(16,37,63,.13);border-color:rgba(198,154,61,.55)}
+    .mini-card h3{font-size:1.26rem;color:var(--navy)}
+    .mini-card p{margin:5px 0 0;color:#56697e;font-size:.86rem;line-height:1.8}
+    .see{display:inline-block;margin-top:8px;color:#0b806d;font:700 .82rem var(--font-ui)}
+    .arabic-text{
+      font-family:var(--font-arabic);
+      font-size:1.22rem;
+      line-height:2.2;
+      color:#123b56;
+      background:#fbf7ec;
+      border-right:3px solid var(--gold);
+      padding:10px 14px;
+      margin-top:12px;
+    }
+    .contact-strip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .contact-strip strong{
+      color:var(--navy);
+      font-family:var(--font-urdu-heading);
+      font-size:1.45rem;
+    }
+    .contact-strip a{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 12px;
+      font:800 .9rem/1.4 var(--font-ui);
+      direction:ltr;
+      text-align:left;
+    }
+
+    .footer{
+      background:#0b2742;
+      color:#dbe7ef;
+      padding:34px 0;
+      margin-top:35px;
+    }
+    .footer-grid{display:grid;grid-template-columns:1.1fr .8fr .8fr .9fr;gap:22px}
+    .footer h2{font-size:1.55rem;color:#fff}
+    .footer p,.footer a{color:#c7d7e2;font-size:.9rem;line-height:2}
+    .footer a{display:block;font-family:var(--font-ui)}
+    .footer .ltr{direction:ltr;text-align:left}
+    .chat-bubble,.floating-chat,.ai-widget,.purple-widget{display:none!important}
+    .back-to-top{
+      position:fixed;left:16px;bottom:16px;
+      width:40px;height:40px;border:0;border-radius:7px;
+      background:var(--gold);color:#172437;font:900 1.05rem var(--font-ui);
+      cursor:pointer;box-shadow:var(--shadow);
+    }
+
+    @media(max-width:960px){
+      .primary-nav{display:none}
+      .nav-toggle{
+        display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);
+        background:#fff;border-radius:6px;font-size:1.15rem;color:var(--navy)
+      }
+      .contact-grid{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      .card-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      body{font-size:16px}
+      .topbar-inner{grid-template-columns:1fr auto;min-height:66px}
+      .brand-en{display:none}
+      .brand-title{font-size:1.05rem}
+      .brand-subtitle{display:none}
+      .brand-mark{width:42px;height:42px;justify-self:end}
+      .brand-mark svg{width:28px;height:28px}
+      .nav-toggle{grid-column:2}
+      .page-hero{padding:34px 0}
+      .card-grid{grid-template-columns:1fr}
+      .quick a{min-width:auto;flex:1 1 120px}
+      .section{padding:36px 0}
+    }
+  </style>
 </head>
 <body data-current="contact">
-<header class="site-header">
   <a class="skip-link" href="#main">مرکزی مواد پر جائیں</a>
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
-      <span class="brand-mark">ح</span>
-      <span class="brand-text"><strong>الحیات مرکزِ مطالعۂ حدیث</strong><small>Al-Hayat Hadith Studies Hub</small></span>
-    </a>
-    <button class="icon-button nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="مینو کھولیں">☰</button>
-    <nav class="primary-nav" id="primaryNav" aria-label="مرکزی نیویگیشن">
-      <a href="index.html" class="nav-link">ہوم</a>
-<a href="books.html" class="nav-link">کتبِ حدیث</a>
-<a href="hadith-sciences.html" class="nav-link">علومِ حدیث</a>
-<a href="topic-index.html" class="nav-link">موضوعات</a>
-<a href="search.html" class="nav-link">تلاش</a>
-<a href="glossary.html" class="nav-link">Glossary</a>
-<a href="mcqs/" class="nav-link">کوئز</a>
-<a href="verification-lab/" class="nav-link">Verification Lab</a>
-<a href="dashboard.html" class="nav-link">Dashboard</a>
-<a href="academic-policy.html" class="nav-link">Policy</a>
-      <div class="mega">
-        <button class="mega-trigger" type="button" aria-expanded="false">نصاب</button>
-        <div class="mega-panel" role="group" aria-label="اہم ابواب">
-          <a href="sahih-hadith/"><span>صحیح حدیث</span><small>Level 3</small></a>
-<a href="daeef-hadith/"><span>ضعیف حدیث</span><small>Level 3</small></a>
-<a href="takhrij-hadith/"><span>تخریج الحدیث</span><small>Level 6</small></a>
-<a href="jarh-tadeel/"><span>الجرح والتعدیل</span><small>Level 5</small></a>
-<a href="ilal-hadith/"><span>علل الحدیث</span><small>Level 5</small></a>
-<a href="responsibility-engine/"><span>ذمہ دارانہ استعمال</span><small>Level 1</small></a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-ur" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
+        <span>
+          <strong class="brand-title">الحیات مرکزِ مطالعۂ حدیث</strong>
+          <small class="brand-subtitle">حدیث و علومِ حدیث کا اردو مرکز</small>
+        </span>
+      </a>
+
+      <a class="brand-mark" href="index.html" aria-label="Al-Hayat Hadith Studies Hub">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M18 14h20a8 8 0 0 1 8 8v28H24a8 8 0 0 0-6 2.7V14z"/>
+          <path d="M46 22h3a7 7 0 0 1 7 7v25H31a7 7 0 0 0-7 3"/>
+          <path d="M25 25h13M25 33h13M25 41h9"/>
+          <path d="M12 20c-3.7 2.8-5.5 6.3-5.5 10.5 0 5.8 3.5 10 8.5 12"/>
+        </svg>
+      </a>
+
+      <div class="brand-en">
+        Al-Hayat Hadith Studies Hub
+        <small>Hadith · Sources · Research</small>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="مینو کھولیں">☰</button>
+      <nav class="primary-nav" aria-label="مرکزی نیویگیشن">
+        <a class="nav-link" href="index.html">ہوم</a>
+        <a class="nav-link" href="topic-index.html">موضوعات</a>
+        <a class="nav-link" href="books-catalog.html">کتب و مصادر</a>
+        <a class="nav-link" href="glossary.html">اصطلاحات</a>
+        <a class="nav-link" href="search.html">تلاش</a>
+        <a class="nav-link" href="source-policy.html">مصادر کا منہج</a>
+        <div class="more-menu">
+          <button class="more-trigger is-active" type="button">مزید فہرست</button>
+          <div class="more-panel">
+            <a href="academic-policy.html">علمی اصول</a>
+            <a href="templates.html">تعلیمی و تحقیقی سانچے</a>
+            <a href="dashboard.html">میری پیش رفت</a>
+            <a href="faq.html">عام سوالات</a>
+            <a href="about.html">ہمارا تعارف</a>
+            <a href="contact.html">رابطہ</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ہوم</a> / رابطہ</p>
+        <span class="eyebrow">CONTACT & CORRECTION</span>
+        <h1>رابطہ و اصلاح</h1>
+        <p class="lead">علمی تجاویز، حوالہ جاتی اصلاح، broken links، مواد کی بہتری، تدریسی تعاون یا ویب سائیٹ کے technical مسئلے کے لیے رابطہ کیا جا سکتا ہے۔ مقصد علمی خدمت، دیانت اور مسلسل بہتری ہے۔</p>
+      </div>
+    </section>
+
+    <nav class="container quick" aria-label="فوری روابط">
+      <a href="#direct">براہِ راست رابطہ</a>
+      <a href="#correction">اصلاح کا طریقہ</a>
+      <a href="#message">پیغام کا نمونہ</a>
+      <a href="#help">کس بات پر رابطہ کریں؟</a>
+    </nav>
+
+    <section class="section" id="direct">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">DIRECT CONTACT</span>
+          <h2>براہِ راست رابطہ</h2>
+          <p>فوری رابطہ، علمی تجویز، اصلاح یا technical issue کے لیے درج ذیل ذرائع استعمال کریں۔</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div>
+              <span class="tag">Phone / WhatsApp</span>
+              <h3>فون / واٹس ایپ</h3>
+              <p>علمی اصلاح، website issue یا فوری پیغام کے لیے WhatsApp بہتر ذریعہ ہے۔</p>
+            </div>
+            <a class="contact-link gold" href="tel:+923354910481">+92 335 4910481</a>
+          </article>
+
+          <article class="contact-card">
+            <div>
+              <span class="tag">Email</span>
+              <h3>ای میل</h3>
+              <p>تفصیلی حوالہ، screenshot، علمی correction یا source note بھیجنے کے لیے email مناسب ہے۔</p>
+            </div>
+            <a class="contact-link" href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+          </article>
+
+          <article class="contact-card">
+            <div>
+              <span class="tag">WhatsApp Link</span>
+              <h3>واٹس ایپ پیغام</h3>
+              <p>اگر آپ mobile پر ہیں تو براہِ راست WhatsApp chat کھول سکتے ہیں۔</p>
+            </div>
+            <a class="contact-link" href="https://wa.me/923354910481">WhatsApp کھولیں</a>
+          </article>
         </div>
       </div>
-      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false">آواز بند</button>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <section class="page-hero compact section-pattern">
-    <div class="container">
-      <p class="breadcrumb"><a href="index.html">ہوم</a> / رابطہ</p>
-      <h1>رابطہ</h1>
-      <p>Contact and contribution page for the Urdu Hadith learning hub.</p>
+    </section>
+
+    <section class="section" id="correction">
+      <div class="container two-col">
+        <article class="panel">
+          <span class="eyebrow">CORRECTION POLICY</span>
+          <h2>اصلاح بھیجنے کا بہتر طریقہ</h2>
+          <p>حدیثی اور علمی مواد میں اصلاح نہایت اہم ہے۔ اصلاح بھیجتے وقت اصل حوالہ، واضح عبارت اور مطلوبہ تبدیلی مختصر مگر مکمل انداز میں بھیجیں۔</p>
+          <ul class="plain-list">
+            <li>صفحے کا link یا file path ضرور لکھیں۔</li>
+            <li>غلطی کی نوعیت واضح کریں: حوالہ، ترجمہ، عبارت، link یا layout۔</li>
+            <li>اصل مصدر یا قابلِ اعتماد reference شامل کریں۔</li>
+            <li>اگر ممکن ہو تو screenshot بھیج دیں۔</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <span class="eyebrow">ACADEMIC NOTE</span>
+          <h2>علمی آداب</h2>
+          <p>حدیثی اختلاف، حکمِ روایت، فقہی اطلاق یا ترجمہ کے معاملے میں ادب، حوالہ اور توازن ضروری ہے۔ اختلافی مسئلے کو جذباتی انداز کے بجائے علمی evidence کے ساتھ پیش کیا جائے۔</p>
+          <p class="arabic-text">رَحِمَ اللهُ امْرَأً أَهْدَى إِلَيَّ عُيُوبِي</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="message">
+      <div class="container note-box">
+        <span class="eyebrow">MESSAGE TEMPLATE</span>
+        <h2>پیغام کا مختصر نمونہ</h2>
+        <p>اصلاح یا تجویز بھیجنے کے لیے یہ مختصر format استعمال کیا جا سکتا ہے:</p>
+        <div class="message-template">السلام علیکم!
+صفحہ / Link:
+مسئلے کی نوعیت:
+موجودہ عبارت / جگہ:
+مجوزہ اصلاح:
+حوالہ / Source:
+مختصر وضاحت:
+جزاکم اللہ خیراً</div>
+      </div>
+    </section>
+
+    <section class="section" id="help">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT TO SEND</span>
+          <h2>کن امور پر رابطہ کیا جا سکتا ہے؟</h2>
+          <p>رابطہ صرف عمومی پیغام کے لیے نہیں، بلکہ علمی معیار کو بہتر بنانے کے لیے بھی ہے۔</p>
+        </div>
+        <div class="card-grid">
+          <a class="mini-card" href="source-policy.html"><span class="tag">مصادر</span><h3>حوالہ جاتی اصلاح</h3><p>کتاب، باب، رقمِ حدیث، جلد/صفحہ یا edition کی correction۔</p><span class="see">منہج دیکھیں</span></a>
+          <a class="mini-card" href="academic-policy.html"><span class="tag">علمی اصول</span><h3>ترجمہ یا عبارت</h3><p>اردو ترجمہ، عربی متن، اصطلاح یا علمی تعبیر سے متعلق اصلاح۔</p><span class="see">اصول پڑھیں</span></a>
+          <a class="mini-card" href="topic-index.html"><span class="tag">مواد</span><h3>نیا موضوع تجویز کریں</h3><p>حدیث یا علومِ حدیث کے کسی اہم topic کو شامل کرنے کی تجویز۔</p><span class="see">موضوعات دیکھیں</span></a>
+          <a class="mini-card" href="search.html"><span class="tag">Technical</span><h3>Broken Link / Error</h3><p>کوئی link نہ کھلے، mobile issue ہو، یا page layout خراب نظر آئے۔</p><span class="see">تلاش کھولیں</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-strip">
+        <strong>رابطہ، اصلاح اور علمی تجاویز</strong>
+        <a href="tel:+923354910481">+92 335 4910481</a>
+        <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <a href="contact.html">رابطہ صفحہ کھولیں</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
+        <p>حدیث نبوی ﷺ کے مطالعے، فہم، حوالہ، تحقیق اور تدریس کے لیے ایک منظم اردو علمی پلیٹ فارم۔</p>
+      </section>
+      <section>
+        <h2>اہم روابط</h2>
+        <a href="topic-index.html">موضوعات</a>
+        <a href="books-catalog.html">کتب و مصادر</a>
+        <a href="glossary.html">اصطلاحات</a>
+        <a href="templates.html">سانچے</a>
+      </section>
+      <section>
+        <h2>علمی اصول</h2>
+        <a href="source-policy.html">مصادر کا منہج</a>
+        <a href="academic-policy.html">علمی اصول</a>
+        <a href="privacy.html">رازداری پالیسی</a>
+        <a href="terms.html">شرائطِ استعمال</a>
+      </section>
+      <section>
+        <h2>رابطہ و اصلاح</h2>
+        <a class="ltr" href="tel:+923354910481">+92 335 4910481</a>
+        <a class="ltr" href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <p>یہ مرکز علمی رہنمائی کے لیے ہے؛ فتویٰ یا ذاتی شرعی مسئلے میں اہلِ علم سے رجوع کیا جائے۔</p>
+      </section>
     </div>
-  </section>
-  <section class="container content-section readable">
-    <div class="contact-grid">
-  <form class="contact-form" data-contact-form>
-    <label>نام <input name="name" required></label>
-    <label>پیغام <textarea name="message" rows="6" required></textarea></label>
-    <button class="button primary" type="submit">پیغام محفوظ کریں</button>
-    <p class="form-note" data-contact-note>یہ static site ہے؛ demo پیغام localStorage میں محفوظ ہوگا۔</p>
-  </form>
-  <div class="prose-panel">
-    <h2>مواد شامل کرنے کا اصول</h2>
-    <p>غیر مستند حدیث، قول، حوالہ یا تاریخی دعویٰ شامل نہیں کیا جائے گا۔ طویل copyrighted passages نقل نہیں کیے جائیں گے؛ خلاصہ، paraphrase، اور citation استعمال ہوگا۔</p>
-  </div>
-</div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <section>
-      <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
-      <p>حدیث کو پڑھیں، سمجھیں، پرکھیں، مشق کریں، اور ذمہ داری سے آگے پہنچائیں۔</p>
-    </section>
-    <section>
-      <h2>اہم روابط</h2>
-      <a href="topic-index.html">موضوعات</a>
-      <a href="books.html">کتبِ حدیث</a>
-      <a href="hadith-sciences.html">علومِ حدیث</a>
-      <a href="hadith-collections.html">مجموعات</a>
-      <a href="scholars.html">محدثین</a>
-      <a href="research.html">تحقیق</a>
-      <a href="references.html">مصادر</a>
-      <a href="search.html">تلاش</a>
-      <a href="glossary.html">Glossary</a>
-      <a href="mcqs/">کثیر الانتخابی سوالات</a>
-      <a href="verification-lab/">Verification Lab</a>
-      <a href="academic-policy.html">Academic Integrity Policy</a>
-      <a href="source-policy.html">Source Policy</a>
-      <a href="faq.html">FAQ</a>
-    </section>
-    <section>
-      <h2>علمی اصول</h2>
-      <p>ہم خود سے احادیث پر مستقل حکم نہیں لگاتے؛ مستند مصادر اور اہلِ علم کے حوالہ جات کے ساتھ مواد مرحلہ وار شامل کیا جائے گا۔</p>
-    </section>
-  </div>
-</footer>
-<button class="back-to-top" type="button" data-back-to-top aria-label="اوپر جائیں">↑</button>
-<script src="assets/data/topics.js"></script>
-<script src="assets/data/mcqs.js"></script>
-<script src="assets/data/study.js"></script>
-<script src="assets/data/glossary.js"></script>
-<script src="assets/data/books.js"></script>
-<script src="assets/data/templates.js"></script>
-<script src="assets/data/site.js"></script>
-<script src="assets/data/progress.js"></script>
-<script src="assets/js/script.js"></script>
+  </footer>
+
+  <button class="back-to-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="اوپر جائیں">↑</button>
+
+  <script>
+    (function(){
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.primary-nav');
+      if(toggle && nav){
+        toggle.addEventListener('click', function(){
+          const open = nav.style.display === 'flex';
+          nav.style.display = open ? 'none' : 'flex';
+          nav.style.position = 'absolute';
+          nav.style.top = '74px';
+          nav.style.left = '14px';
+          nav.style.right = '14px';
+          nav.style.background = '#fff';
+          nav.style.border = '1px solid rgba(18,59,86,.13)';
+          nav.style.borderRadius = '10px';
+          nav.style.padding = '10px';
+          nav.style.boxShadow = '0 12px 28px rgba(16,37,63,.10)';
+          nav.style.flexDirection = 'column';
+          nav.style.alignItems = 'stretch';
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
