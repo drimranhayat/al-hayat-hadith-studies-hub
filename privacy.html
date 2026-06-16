@@ -3,106 +3,611 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy | الحیات مرکزِ مطالعۂ حدیث</title>
-  <meta name="description" content="Privacy notes for the static Hadith Studies Hub.">
-  <meta property="og:title" content="Privacy | الحیات مرکزِ مطالعۂ حدیث">
-  <meta property="og:description" content="Privacy notes for the static Hadith Studies Hub.">
+  <title>رازداری پالیسی | الحیات مرکزِ مطالعۂ حدیث</title>
+  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث کی رازداری پالیسی: صارف کے ڈیٹا، رابطہ معلومات، cookies، third-party services، GitHub Pages، Google Fonts، email/WhatsApp رابطہ اور بچوں کے استعمال سے متعلق واضح پالیسی۔">
+  <meta name="keywords" content="رازداری پالیسی, privacy policy, الحیات حدیث, Hadith Studies Hub privacy, GitHub Pages privacy, Urdu Islamic website privacy">
+  <meta name="author" content="Dr Imran Hayat Malik">
+  <meta name="theme-color" content="#0b2742">
+  <meta property="og:title" content="رازداری پالیسی | الحیات مرکزِ مطالعۂ حدیث">
+  <meta property="og:description" content="ویب سائیٹ کے استعمال، رابطہ معلومات، cookies اور third-party services سے متعلق رازداری پالیسی۔">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ur_PK">
-  <meta name="theme-color" content="#10253f">
-  <link rel="canonical" href="privacy.html">
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-hadith-studies-hub/privacy.html">
   <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "رازداری پالیسی",
+    "alternateName": "Privacy Policy",
+    "url": "https://drimranhayat.github.io/al-hayat-hadith-studies-hub/privacy.html",
+    "isPartOf": {
+      "@type": "EducationalOrganization",
+      "name": "الحیات مرکزِ مطالعۂ حدیث",
+      "alternateName": "Al-Hayat Hadith Studies Hub",
+      "url": "https://drimranhayat.github.io/al-hayat-hadith-studies-hub/",
+      "email": "drimranhayatmalik@gmail.com",
+      "telephone": "+923354910481"
+    },
+    "inLanguage": "ur"
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#0b2742;
+      --navy-2:#123b56;
+      --teal:#0f766e;
+      --teal-2:#0b8b72;
+      --gold:#c69a3d;
+      --cream:#f8f4e9;
+      --cream-2:#fffdf6;
+      --paper:#ffffff;
+      --ink:#102033;
+      --muted:#66788d;
+      --line:rgba(18,59,86,.13);
+      --shadow:0 12px 28px rgba(16,37,63,.10);
+      --font-urdu-heading:"Jameel Noori Nastaleeq","Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-urdu-body:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+      --font-ui:"Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;
+      --font-arabic:"Amiri","Scheherazade New","Noto Naskh Arabic",serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background-color:var(--cream);
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(198,154,61,.15) 1px, transparent 0),
+        linear-gradient(180deg,#fffdf6 0%,#f7f1e5 100%);
+      background-size:18px 18px, auto;
+      color:var(--ink);
+      font-family:var(--font-urdu-body);
+      font-size:17px;
+      line-height:2.05;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible{outline:3px solid rgba(198,154,61,.85);outline-offset:3px}
+    .container{width:min(1100px,calc(100% - 28px));margin-inline:auto}
+    .skip-link{position:absolute;right:16px;top:-60px;background:#fff;color:#111;padding:10px 14px;border-radius:12px;z-index:50}
+    .skip-link:focus{top:12px}
+
+    .topbar{
+      background:rgba(255,253,246,.97);
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      z-index:40;
+      backdrop-filter:blur(12px);
+      box-shadow:0 6px 18px rgba(16,37,63,.05);
+    }
+    .topbar-inner{
+      min-height:84px;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:16px;
+    }
+    .brand-ur{
+      justify-self:start;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .brand-en{
+      justify-self:end;
+      direction:ltr;
+      text-align:left;
+      color:var(--navy);
+      font:800 1rem/1.25 var(--font-ui);
+      letter-spacing:.01em;
+      white-space:nowrap;
+    }
+    .brand-en small{
+      display:block;
+      color:var(--muted);
+      font:600 .78rem/1.2 var(--font-ui);
+      margin-top:2px;
+    }
+    .brand-mark{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:
+        radial-gradient(circle at 35% 28%,rgba(255,255,255,.30),transparent 22%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:#fff;
+      box-shadow:0 10px 22px rgba(11,39,66,.22);
+      border:1px solid rgba(198,154,61,.38);
+      position:relative;
+      overflow:hidden;
+    }
+    .brand-mark svg{
+      width:36px;
+      height:36px;
+      display:block;
+      fill:none;
+      stroke:#f4d082;
+      stroke-width:1.75;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));
+    }
+    .brand-title{
+      display:block;
+      font-family:var(--font-urdu-heading);
+      font-size:1.42rem;
+      line-height:1.35;
+      color:var(--navy);
+      letter-spacing:-.03em;
+      white-space:nowrap;
+    }
+    .brand-subtitle{
+      display:block;
+      color:var(--muted);
+      font:700 .82rem/1.3 var(--font-ui);
+      margin-top:2px;
+    }
+    .nav-toggle{display:none}
+    .primary-nav{
+      grid-column:1 / -1;
+      display:flex;align-items:center;gap:4px;justify-content:center;
+      font-family:var(--font-ui);
+      padding-top:6px;
+      padding-bottom:6px;
+      border-top:1px solid rgba(18,59,86,.08);
+    }
+    .nav-link,.more-trigger{
+      border:0;background:transparent;cursor:pointer;
+      padding:8px 12px;border-radius:999px;
+      font:800 .95rem/1.35 var(--font-ui);
+      color:var(--navy);
+      transition:.2s ease;
+      white-space:nowrap;
+    }
+    .nav-link:hover,.nav-link.is-active,.more-trigger:hover{
+      background:#eef5ef;color:#08705f;transform:translateY(-1px);
+    }
+    .more-menu{position:relative}
+    .more-panel{
+      position:absolute;top:calc(100% + 8px);left:0;
+      width:230px;background:#fff;border:1px solid var(--line);
+      border-radius:16px;box-shadow:var(--shadow);padding:8px;display:none;z-index:20;
+    }
+    .more-menu:hover .more-panel,.more-menu:focus-within .more-panel{display:grid}
+    .more-panel a{padding:8px 10px;border-radius:12px;font:700 .9rem/1.5 var(--font-ui)}
+    .more-panel a:hover{background:#f8f4e9;color:#8b6418}
+
+    .page-hero{
+      background:
+        radial-gradient(circle at 13% 30%,rgba(198,154,61,.22),transparent 28%),
+        linear-gradient(135deg,#0b2742 0%,#123b56 57%,#07836d 100%);
+      color:#fff;
+      padding:56px 0 50px;
+      border-bottom:1px solid rgba(11,39,66,.15);
+    }
+    .breadcrumb{margin:0 0 10px;color:#d6e8ec;font:700 .88rem/1.5 var(--font-ui)}
+    .breadcrumb a{color:#f1cf80}
+    .eyebrow{
+      display:inline-block;
+      color:#f0c970;
+      font:700 .82rem/1.5 var(--font-ui);
+      letter-spacing:.02em;
+      margin-bottom:8px;
+    }
+    h1,h2,h3{
+      margin:0;
+      font-family:var(--font-urdu-heading);
+      color:inherit;
+      letter-spacing:-.03em;
+      line-height:1.65;
+    }
+    h1{font-size:clamp(2.15rem,4.8vw,4.05rem);margin-bottom:10px}
+    .lead{
+      margin:0;
+      color:#edf6f6;
+      font-size:clamp(1.05rem,1.8vw,1.45rem);
+      line-height:2.15;
+      max-width:820px;
+    }
+
+    .quick{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .quick a{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:5px;
+      min-width:100px;
+      text-align:center;
+      padding:8px 11px;
+      font:700 .88rem/1.4 var(--font-ui);
+      box-shadow:0 6px 16px rgba(16,37,63,.06);
+      transition:.2s ease;
+    }
+    .quick a:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+
+    .section{padding:48px 0}
+    .section + .section{border-top:1px solid rgba(198,154,61,.15)}
+    .section-heading{text-align:center;margin-bottom:22px}
+    .section-heading .eyebrow{color:var(--gold)}
+    .section-heading h2{font-size:clamp(1.65rem,3vw,2.45rem);color:var(--navy)}
+    .section-heading p{
+      margin:4px auto 0;
+      max-width:760px;
+      color:var(--muted);
+      font-size:.95rem;
+      line-height:1.9;
+    }
+
+    .policy-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:18px;align-items:start}
+    .side-card,.policy-card,.panel{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+    }
+    .side-card{padding:20px;position:sticky;top:128px}
+    .side-card h2{font-size:1.75rem;color:var(--navy)}
+    .side-card p{margin:7px 0 0;color:#56697e;font-size:.92rem;line-height:1.9}
+    .side-card nav{display:grid;gap:8px;margin-top:14px}
+    .side-card a{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 10px;
+      font:800 .88rem/1.55 var(--font-ui);
+      color:#31485f;
+      transition:.2s ease;
+    }
+    .side-card a:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+
+    .policy-group{display:grid;gap:14px}
+    .policy-card{padding:22px}
+    .policy-card h2{font-size:2rem;color:var(--navy)}
+    .policy-card p{margin:8px 0 0;color:#50647b;line-height:2}
+    .policy-card ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+    .policy-card li{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 10px;
+      font:700 .9rem/1.7 var(--font-ui);
+      color:#31485f;
+    }
+    .tag{
+      display:inline-block;
+      padding:2px 7px;
+      border-radius:99px;
+      background:#fbf3de;
+      color:#9a6d18;
+      font:700 .68rem/1.6 var(--font-ui);
+      margin-bottom:6px;
+    }
+    .notice{
+      background:#fbf7ec;
+      border:1px solid #eadfca;
+      border-right:4px solid var(--gold);
+      border-radius:7px;
+      padding:14px;
+      margin-top:14px;
+      color:#31485f;
+      font:700 .9rem/2 var(--font-ui);
+    }
+    .contact-strip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:6px;
+      box-shadow:0 8px 18px rgba(16,37,63,.07);
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .contact-strip strong{
+      color:var(--navy);
+      font-family:var(--font-urdu-heading);
+      font-size:1.45rem;
+    }
+    .contact-strip a{
+      background:#f8f4e9;
+      border:1px solid #eadfca;
+      border-radius:5px;
+      padding:8px 12px;
+      font:800 .9rem/1.4 var(--font-ui);
+      direction:ltr;
+      text-align:left;
+    }
+
+    .footer{
+      background:#0b2742;
+      color:#dbe7ef;
+      padding:34px 0;
+      margin-top:35px;
+    }
+    .footer-grid{display:grid;grid-template-columns:1.1fr .8fr .8fr .9fr;gap:22px}
+    .footer h2{font-size:1.55rem;color:#fff}
+    .footer p,.footer a{color:#c7d7e2;font-size:.9rem;line-height:2}
+    .footer a{display:block;font-family:var(--font-ui)}
+    .footer .ltr{direction:ltr;text-align:left}
+    .chat-bubble,.floating-chat,.ai-widget,.purple-widget{display:none!important}
+    .back-to-top{
+      position:fixed;left:16px;bottom:16px;
+      width:40px;height:40px;border:0;border-radius:7px;
+      background:var(--gold);color:#172437;font:900 1.05rem var(--font-ui);
+      cursor:pointer;box-shadow:var(--shadow);
+    }
+
+    @media(max-width:960px){
+      .primary-nav{display:none}
+      .nav-toggle{
+        display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);
+        background:#fff;border-radius:6px;font-size:1.15rem;color:var(--navy)
+      }
+      .policy-layout{grid-template-columns:1fr}
+      .side-card{position:static}
+      .footer-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      body{font-size:16px}
+      .topbar-inner{grid-template-columns:1fr auto;min-height:66px}
+      .brand-en{display:none}
+      .brand-title{font-size:1.05rem}
+      .brand-subtitle{display:none}
+      .brand-mark{width:42px;height:42px;justify-self:end}
+      .brand-mark svg{width:28px;height:28px}
+      .nav-toggle{grid-column:2}
+      .page-hero{padding:34px 0}
+      .quick a{min-width:auto;flex:1 1 120px}
+      .section{padding:36px 0}
+    }
+  </style>
 </head>
 <body data-current="privacy">
-<header class="site-header">
   <a class="skip-link" href="#main">مرکزی مواد پر جائیں</a>
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
-      <span class="brand-mark">ح</span>
-      <span class="brand-text"><strong>الحیات مرکزِ مطالعۂ حدیث</strong><small>Al-Hayat Hadith Studies Hub</small></span>
-    </a>
-    <button class="icon-button nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="مینو کھولیں">☰</button>
-    <nav class="primary-nav" id="primaryNav" aria-label="مرکزی نیویگیشن">
-      <a href="index.html" class="nav-link">ہوم</a>
-<a href="books.html" class="nav-link">کتبِ حدیث</a>
-<a href="hadith-sciences.html" class="nav-link">علومِ حدیث</a>
-<a href="topic-index.html" class="nav-link">موضوعات</a>
-<a href="search.html" class="nav-link">تلاش</a>
-<a href="glossary.html" class="nav-link">Glossary</a>
-<a href="mcqs/" class="nav-link">کوئز</a>
-<a href="verification-lab/" class="nav-link">Verification Lab</a>
-<a href="dashboard.html" class="nav-link">Dashboard</a>
-<a href="academic-policy.html" class="nav-link">Policy</a>
-      <div class="mega">
-        <button class="mega-trigger" type="button" aria-expanded="false">نصاب</button>
-        <div class="mega-panel" role="group" aria-label="اہم ابواب">
-          <a href="sahih-hadith/"><span>صحیح حدیث</span><small>Level 3</small></a>
-<a href="daeef-hadith/"><span>ضعیف حدیث</span><small>Level 3</small></a>
-<a href="takhrij-hadith/"><span>تخریج الحدیث</span><small>Level 6</small></a>
-<a href="jarh-tadeel/"><span>الجرح والتعدیل</span><small>Level 5</small></a>
-<a href="ilal-hadith/"><span>علل الحدیث</span><small>Level 5</small></a>
-<a href="responsibility-engine/"><span>ذمہ دارانہ استعمال</span><small>Level 1</small></a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-ur" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
+        <span>
+          <strong class="brand-title">الحیات مرکزِ مطالعۂ حدیث</strong>
+          <small class="brand-subtitle">حدیث و علومِ حدیث کا اردو مرکز</small>
+        </span>
+      </a>
+
+      <a class="brand-mark" href="index.html" aria-label="Al-Hayat Hadith Studies Hub">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M18 14h20a8 8 0 0 1 8 8v28H24a8 8 0 0 0-6 2.7V14z"/>
+          <path d="M46 22h3a7 7 0 0 1 7 7v25H31a7 7 0 0 0-7 3"/>
+          <path d="M25 25h13M25 33h13M25 41h9"/>
+          <path d="M12 20c-3.7 2.8-5.5 6.3-5.5 10.5 0 5.8 3.5 10 8.5 12"/>
+        </svg>
+      </a>
+
+      <div class="brand-en">
+        Al-Hayat Hadith Studies Hub
+        <small>Hadith · Sources · Research</small>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="مینو کھولیں">☰</button>
+      <nav class="primary-nav" aria-label="مرکزی نیویگیشن">
+        <a class="nav-link" href="index.html">ہوم</a>
+        <a class="nav-link" href="topic-index.html">موضوعات</a>
+        <a class="nav-link" href="books-catalog.html">کتب و مصادر</a>
+        <a class="nav-link" href="glossary.html">اصطلاحات</a>
+        <a class="nav-link" href="search.html">تلاش</a>
+        <a class="nav-link" href="source-policy.html">مصادر کا منہج</a>
+        <div class="more-menu">
+          <button class="more-trigger is-active" type="button">مزید فہرست</button>
+          <div class="more-panel">
+            <a href="academic-policy.html">علمی اصول</a>
+            <a href="templates.html">تعلیمی و تحقیقی سانچے</a>
+            <a href="dashboard.html">میری پیش رفت</a>
+            <a href="faq.html">عام سوالات</a>
+            <a href="about.html">ہمارا تعارف</a>
+            <a href="contact.html">رابطہ</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ہوم</a> / رازداری پالیسی</p>
+        <span class="eyebrow">PRIVACY POLICY</span>
+        <h1>رازداری پالیسی</h1>
+        <p class="lead">یہ پالیسی واضح کرتی ہے کہ الحیات مرکزِ مطالعۂ حدیث صارف کی معلومات، رابطہ پیغامات، cookies، third-party services اور ویب سائیٹ کے عمومی استعمال کے معاملے میں کیا اصول اختیار کرتا ہے۔</p>
+      </div>
+    </section>
+
+    <nav class="container quick" aria-label="فوری روابط">
+      <a href="#overview">خلاصہ</a>
+      <a href="#collection">معلومات</a>
+      <a href="#cookies">Cookies</a>
+      <a href="#third-party">Third-party</a>
+      <a href="#children">بچے</a>
+      <a href="#contact">رابطہ</a>
+    </nav>
+
+    <section class="section">
+      <div class="container policy-layout">
+        <aside class="side-card">
+          <span class="eyebrow">POLICY MAP</span>
+          <h2>پالیسی فہرست</h2>
+          <p>یہ ویب سائیٹ بنیادی طور پر static educational website ہے۔ کوئی account system، paid login یا private student database شامل نہیں۔</p>
+          <nav>
+            <a href="#overview">عمومی خلاصہ</a>
+            <a href="#collection">کون سی معلومات لی جا سکتی ہیں؟</a>
+            <a href="#use">معلومات کا استعمال</a>
+            <a href="#cookies">Cookies اور analytics</a>
+            <a href="#third-party">GitHub Pages اور Google Fonts</a>
+            <a href="#children">بچوں کے استعمال سے متعلق</a>
+            <a href="#contact">رابطہ اور اصلاح</a>
+          </nav>
+        </aside>
+
+        <div class="policy-group">
+          <article id="overview" class="policy-card">
+            <span class="tag">خلاصہ</span>
+            <h2>عمومی خلاصہ</h2>
+            <p>الحیات مرکزِ مطالعۂ حدیث کا بنیادی مقصد علمی اور تعلیمی مواد فراہم کرنا ہے۔ ویب سائیٹ browsing کے لیے کسی personal account، password، login، payment یا private profile کی ضرورت نہیں رکھتی۔</p>
+            <div class="notice">یہ پالیسی عمومی تعلیمی ویب سائیٹ کے لیے تیار کی گئی ہے۔ قانونی مشاورت کا بدل نہیں، مگر users کو صاف اور responsible information دینے کے لیے شامل کی گئی ہے۔</div>
+          </article>
+
+          <article id="collection" class="policy-card">
+            <span class="tag">معلومات</span>
+            <h2>کون سی معلومات لی جا سکتی ہیں؟</h2>
+            <p>عام browsing کے دوران ویب سائیٹ خود کوئی personal form data collect نہیں کرتی۔ البتہ جب user خود email، phone یا WhatsApp کے ذریعے رابطہ کرے تو درج ذیل معلومات موصول ہو سکتی ہیں:</p>
+            <ul>
+              <li>نام، email address یا phone number، اگر user خود فراہم کرے۔</li>
+              <li>پیغام کا متن، علمی correction، source reference یا screenshot۔</li>
+              <li>صفحے کا link، broken link report یا technical issue کی تفصیل۔</li>
+            </ul>
+          </article>
+
+          <article id="use" class="policy-card">
+            <span class="tag">استعمال</span>
+            <h2>معلومات کا استعمال کیسے ہوگا؟</h2>
+            <p>رابطہ کے ذریعے ملنے والی معلومات صرف متعلقہ مقصد کے لیے استعمال کی جائیں گی: جواب دینا، اصلاح verify کرنا، broken link درست کرنا، علمی تجویز review کرنا یا ویب سائیٹ کو بہتر بنانا۔</p>
+            <ul>
+              <li>رابطہ معلومات کو غیر متعلقہ marketing کے لیے استعمال نہیں کیا جائے گا۔</li>
+              <li>ذاتی پیغامات کو public page پر شائع نہیں کیا جائے گا، الا یہ کہ user واضح اجازت دے۔</li>
+              <li>علمی اصلاح کو source verification کے بعد content improvement کے لیے استعمال کیا جا سکتا ہے۔</li>
+            </ul>
+          </article>
+
+          <article id="cookies" class="policy-card">
+            <span class="tag">Cookies</span>
+            <h2>Cookies اور analytics</h2>
+            <p>اس وقت ویب سائیٹ کا مقصد static educational content ہے۔ اگر مستقبل میں analytics، search improvement یا user progress tracking شامل کیا گیا تو اس پالیسی کو update کیا جائے گا۔</p>
+            <ul>
+              <li>فی الحال کوئی login-based personal tracking system ضروری نہیں۔</li>
+              <li>Browser local storage یا simple JavaScript features مستقبل میں study progress کے لیے استعمال ہو سکتے ہیں۔</li>
+              <li>اگر third-party analytics شامل کی گئی تو واضح mention کیا جائے گا۔</li>
+            </ul>
+          </article>
+
+          <article id="third-party" class="policy-card">
+            <span class="tag">Third-party</span>
+            <h2>GitHub Pages، Google Fonts اور بیرونی links</h2>
+            <p>یہ ویب سائیٹ GitHub Pages پر host ہو سکتی ہے اور fonts کے لیے Google Fonts استعمال کرتی ہے۔ بیرونی links، جیسے digital libraries یا source websites، اپنی privacy policies کے تحت کام کرتی ہیں۔</p>
+            <ul>
+              <li>GitHub Pages hosting کے technical logs GitHub کے نظام کے تحت ہو سکتے ہیں۔</li>
+              <li>Google Fonts load ہونے پر browser Google servers سے fonts fetch کر سکتا ہے۔</li>
+              <li>External links کھولتے وقت متعلقہ website کی policy user پر لاگو ہو سکتی ہے۔</li>
+            </ul>
+          </article>
+
+          <article id="children" class="policy-card">
+            <span class="tag">بچے</span>
+            <h2>بچوں کے استعمال سے متعلق</h2>
+            <p>یہ ویب سائیٹ بنیادی طور پر حدیث اور علومِ حدیث کے تعلیمی مطالعے کے لیے ہے۔ کم عمر students اگر site استعمال کریں تو والدین، استاد یا guardian کی رہنمائی بہتر ہے، خاص طور پر جب وہ email یا WhatsApp کے ذریعے کوئی ذاتی معلومات بھیج رہے ہوں۔</p>
+          </article>
+
+          <article id="security" class="policy-card">
+            <span class="tag">حفاظت</span>
+            <h2>حفاظت اور احتیاط</h2>
+            <p>Users سے درخواست ہے کہ email یا WhatsApp میں غیر ضروری personal, financial یا sensitive information نہ بھیجیں۔ علمی اصلاح کے لیے صرف متعلقہ source، reference، page link اور مختصر وضاحت کافی ہے۔</p>
+          </article>
+
+          <article id="updates" class="policy-card">
+            <span class="tag">Updates</span>
+            <h2>پالیسی میں تبدیلی</h2>
+            <p>ویب سائیٹ کے features بڑھنے کے ساتھ اس privacy policy کو update کیا جا سکتا ہے۔ نئی تبدیلیاں اسی page پر شائع کی جائیں گی۔</p>
+          </article>
+
+          <article id="contact" class="policy-card">
+            <span class="tag">رابطہ</span>
+            <h2>رازداری سے متعلق رابطہ</h2>
+            <p>اگر آپ privacy، data، message removal، correction یا رابطہ معلومات کے استعمال سے متعلق کوئی سوال رکھتے ہیں تو درج ذیل ذرائع سے رابطہ کریں۔</p>
+            <ul>
+              <li><a href="tel:+923354910481">فون / واٹس ایپ: +92 335 4910481</a></li>
+              <li><a href="mailto:drimranhayatmalik@gmail.com">ای میل: drimranhayatmalik@gmail.com</a></li>
+            </ul>
+          </article>
         </div>
       </div>
-      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false">آواز بند</button>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <section class="page-hero compact section-pattern">
-    <div class="container">
-      <p class="breadcrumb"><a href="index.html">ہوم</a> / Privacy</p>
-      <h1>Privacy</h1>
-      <p>Privacy notes for the static Hadith Studies Hub.</p>
+    </section>
+
+    <section class="section">
+      <div class="container contact-strip">
+        <strong>رابطہ، اصلاح اور علمی تجاویز</strong>
+        <a href="tel:+923354910481">+92 335 4910481</a>
+        <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <a href="contact.html">رابطہ صفحہ کھولیں</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
+        <p>حدیث نبوی ﷺ کے مطالعے، فہم، حوالہ، تحقیق اور تدریس کے لیے ایک منظم اردو علمی پلیٹ فارم۔</p>
+      </section>
+      <section>
+        <h2>اہم روابط</h2>
+        <a href="topic-index.html">موضوعات</a>
+        <a href="books-catalog.html">کتب و مصادر</a>
+        <a href="glossary.html">اصطلاحات</a>
+        <a href="templates.html">سانچے</a>
+      </section>
+      <section>
+        <h2>علمی اصول</h2>
+        <a href="source-policy.html">مصادر کا منہج</a>
+        <a href="academic-policy.html">علمی اصول</a>
+        <a href="privacy.html">رازداری پالیسی</a>
+        <a href="terms.html">شرائطِ استعمال</a>
+      </section>
+      <section>
+        <h2>رابطہ و اصلاح</h2>
+        <a class="ltr" href="tel:+923354910481">+92 335 4910481</a>
+        <a class="ltr" href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <p>یہ مرکز علمی رہنمائی کے لیے ہے؛ فتویٰ یا ذاتی شرعی مسئلے میں اہلِ علم سے رجوع کیا جائے۔</p>
+      </section>
     </div>
-  </section>
-  <section class="container content-section readable">
-    <div class="prose-panel">
-  <h2>Privacy</h2>
-  <p>یہ static GitHub Pages site ہے۔ First version میں progress، saved topics، quiz results، confidence، اور optional settings صرف browser localStorage میں محفوظ ہوتے ہیں۔</p>
-  <p>کوئی server-side account، login، payment، یا personal data collection اس version میں شامل نہیں۔</p>
-</div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <section>
-      <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
-      <p>حدیث کو پڑھیں، سمجھیں، پرکھیں، مشق کریں، اور ذمہ داری سے آگے پہنچائیں۔</p>
-    </section>
-    <section>
-      <h2>اہم روابط</h2>
-      <a href="topic-index.html">موضوعات</a>
-      <a href="books.html">کتبِ حدیث</a>
-      <a href="hadith-sciences.html">علومِ حدیث</a>
-      <a href="hadith-collections.html">مجموعات</a>
-      <a href="scholars.html">محدثین</a>
-      <a href="research.html">تحقیق</a>
-      <a href="references.html">مصادر</a>
-      <a href="search.html">تلاش</a>
-      <a href="glossary.html">Glossary</a>
-      <a href="mcqs/">کثیر الانتخابی سوالات</a>
-      <a href="verification-lab/">Verification Lab</a>
-      <a href="academic-policy.html">Academic Integrity Policy</a>
-      <a href="source-policy.html">Source Policy</a>
-      <a href="faq.html">FAQ</a>
-    </section>
-    <section>
-      <h2>علمی اصول</h2>
-      <p>ہم خود سے احادیث پر مستقل حکم نہیں لگاتے؛ مستند مصادر اور اہلِ علم کے حوالہ جات کے ساتھ مواد مرحلہ وار شامل کیا جائے گا۔</p>
-    </section>
-  </div>
-</footer>
-<button class="back-to-top" type="button" data-back-to-top aria-label="اوپر جائیں">↑</button>
-<script src="assets/data/topics.js"></script>
-<script src="assets/data/mcqs.js"></script>
-<script src="assets/data/study.js"></script>
-<script src="assets/data/glossary.js"></script>
-<script src="assets/data/books.js"></script>
-<script src="assets/data/templates.js"></script>
-<script src="assets/data/site.js"></script>
-<script src="assets/data/progress.js"></script>
-<script src="assets/js/script.js"></script>
+  </footer>
+
+  <button class="back-to-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="اوپر جائیں">↑</button>
+
+  <script>
+    (function(){
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.primary-nav');
+      if(toggle && nav){
+        toggle.addEventListener('click', function(){
+          const open = nav.style.display === 'flex';
+          nav.style.display = open ? 'none' : 'flex';
+          nav.style.position = 'absolute';
+          nav.style.top = '74px';
+          nav.style.left = '14px';
+          nav.style.right = '14px';
+          nav.style.background = '#fff';
+          nav.style.border = '1px solid rgba(18,59,86,.13)';
+          nav.style.borderRadius = '10px';
+          nav.style.padding = '10px';
+          nav.style.boxShadow = '0 12px 28px rgba(16,37,63,.10)';
+          nav.style.flexDirection = 'column';
+          nav.style.alignItems = 'stretch';
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
