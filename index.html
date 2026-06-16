@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>الحیات مرکزِ مطالعۂ حدیث | اردو حدیث، علومِ حدیث، مصادر اور تحقیق</title>
-  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث: اردو میں حدیث نبوی ﷺ، علومِ حدیث، حجیتِ حدیث، مصطلح الحدیث، کتب و مصادر، تخریج، رجال، علل، فقہ الحدیث، محدثین کے منہج، اخلاق، سوالات اور تحقیقی رہنمائی کا منظم علمی مرکز۔">
+  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث: اردو میں حدیث نبوی ﷺ، علومِ حدیث، حجیتِ حدیث، مصطلح الحدیث، کتب و مصادر، تخریج، رجال، علل، فقہ الحدیث، محدثین کے منہج، اخلاق، سوالات، تدریسی وسائل اور تحقیقی رہنمائی کا منظم علمی مرکز۔">
   <meta name="keywords" content="حدیث, علوم حدیث, حجیت حدیث, مصطلح الحدیث, تخریج الحدیث, صحیح حدیث, حسن حدیث, ضعیف حدیث, موضوع روایت, جرح و تعدیل, علل الحدیث, فقہ الحدیث, کتب حدیث, Urdu Hadith Studies">
   <meta name="author" content="Dr Imran Hayat Malik">
   <meta property="og:title" content="الحیات مرکزِ مطالعۂ حدیث">
@@ -69,23 +69,26 @@
       text-rendering:optimizeLegibility;
     }
     a{color:inherit;text-decoration:none}
-    .container{width:min(1060px,calc(100% - 28px));margin-inline:auto}
+    a:focus-visible,button:focus-visible{outline:3px solid rgba(198,154,61,.85);outline-offset:3px}
+    .container{width:min(1100px,calc(100% - 28px));margin-inline:auto}
     .skip-link{position:absolute;right:16px;top:-60px;background:#fff;color:#111;padding:10px 14px;border-radius:12px;z-index:50}
     .skip-link:focus{top:12px}
 
     .topbar{
-      background:var(--cream-2);
+      background:rgba(255,253,246,.97);
       border-bottom:1px solid var(--line);
       position:sticky;
       top:0;
       z-index:40;
+      backdrop-filter:blur(12px);
+      box-shadow:0 6px 18px rgba(16,37,63,.05);
     }
     .topbar-inner{
-      min-height:74px;
+      min-height:84px;
       display:grid;
       grid-template-columns:1fr auto 1fr;
       align-items:center;
-      gap:14px;
+      gap:16px;
     }
     .brand-ur{
       justify-self:start;
@@ -99,18 +102,18 @@
       direction:ltr;
       text-align:left;
       color:var(--navy);
-      font:800 .92rem/1.25 var(--font-ui);
+      font:800 1rem/1.25 var(--font-ui);
       letter-spacing:.01em;
       white-space:nowrap;
     }
     .brand-en small{
       display:block;
       color:var(--muted);
-      font:600 .72rem/1.2 var(--font-ui);
+      font:600 .78rem/1.2 var(--font-ui);
       margin-top:2px;
     }
     .brand-mark{
-      width:48px;height:48px;border-radius:16px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
       background:
         radial-gradient(circle at 35% 28%,rgba(255,255,255,.30),transparent 22%),
@@ -122,8 +125,8 @@
       overflow:hidden;
     }
     .brand-mark svg{
-      width:31px;
-      height:31px;
+      width:36px;
+      height:36px;
       display:block;
       fill:none;
       stroke:#f4d082;
@@ -135,7 +138,7 @@
     .brand-title{
       display:block;
       font-family:var(--font-urdu-heading);
-      font-size:1.2rem;
+      font-size:1.42rem;
       line-height:1.35;
       color:var(--navy);
       letter-spacing:-.03em;
@@ -144,7 +147,7 @@
     .brand-subtitle{
       display:block;
       color:var(--muted);
-      font:700 .75rem/1.3 var(--font-ui);
+      font:700 .82rem/1.3 var(--font-ui);
       margin-top:2px;
     }
     .nav-toggle{display:none}
@@ -152,13 +155,14 @@
       grid-column:1 / -1;
       display:flex;align-items:center;gap:4px;justify-content:center;
       font-family:var(--font-ui);
-      padding-top:2px;
+      padding-top:6px;
+      padding-bottom:6px;
       border-top:1px solid rgba(18,59,86,.08);
     }
     .nav-link,.more-trigger{
       border:0;background:transparent;cursor:pointer;
-      padding:7px 10px;border-radius:999px;
-      font:700 .9rem/1.35 var(--font-ui);
+      padding:8px 12px;border-radius:999px;
+      font:800 .95rem/1.35 var(--font-ui);
       color:var(--navy);
       transition:.2s ease;
       white-space:nowrap;
@@ -181,10 +185,10 @@
         radial-gradient(circle at 13% 30%,rgba(198,154,61,.22),transparent 28%),
         linear-gradient(135deg,#0b2742 0%,#123b56 57%,#07836d 100%);
       color:#fff;
-      min-height:360px;
+      min-height:392px;
       display:flex;
       align-items:center;
-      padding:44px 0;
+      padding:56px 0;
       border-bottom:1px solid rgba(11,39,66,.15);
     }
     .hero-grid{
@@ -194,14 +198,14 @@
       align-items:center;
     }
     .hero-visual{
-      max-width:330px;
+      max-width:345px;
       justify-self:start;
       background:rgba(255,255,255,.10);
       border:1px solid rgba(255,255,255,.22);
       border-radius:10px;
       box-shadow:0 18px 45px rgba(0,0,0,.18);
       padding:22px;
-      min-height:250px;
+      min-height:265px;
       display:grid;
       place-items:center;
       text-align:center;
@@ -217,7 +221,7 @@
       opacity:.7;
     }
     .hero-visual-content{position:relative}
-    .arabic-word{font:700 1.65rem var(--font-arabic);color:#f7d78a;margin-bottom:12px}
+    .arabic-word{font:700 1.82rem var(--font-arabic);color:#f7d78a;margin-bottom:12px}
     .hero-visual p{margin:0;color:#eef6f7;font-size:.92rem;line-height:2}
     .eyebrow{
       display:inline-block;
@@ -233,7 +237,7 @@
       letter-spacing:-.03em;
       line-height:1.65;
     }
-    h1{font-size:clamp(2rem,4.5vw,3.75rem);margin-bottom:8px}
+    h1{font-size:clamp(2.15rem,4.8vw,4.05rem);margin-bottom:10px}
     .lead{
       margin:0;
       color:#edf6f6;
@@ -287,7 +291,7 @@
     .section-heading h2{font-size:clamp(1.65rem,3vw,2.45rem);color:var(--navy)}
     .section-heading p{
       margin:4px auto 0;
-      max-width:650px;
+      max-width:720px;
       color:var(--muted);
       font-size:.95rem;
       line-height:1.9;
@@ -301,9 +305,9 @@
     .level-card{
       background:#fff;
       border:1px solid var(--line);
-      border-radius:4px;
-      min-height:155px;
-      padding:16px 14px;
+      border-radius:6px;
+      min-height:165px;
+      padding:18px 15px;
       text-align:center;
       box-shadow:0 8px 18px rgba(16,37,63,.07);
       transition:.22s ease;
@@ -327,9 +331,9 @@
     .topic-card{
       background:#fff;
       border:1px solid var(--line);
-      border-radius:5px;
-      min-height:168px;
-      padding:14px;
+      border-radius:6px;
+      min-height:178px;
+      padding:16px;
       box-shadow:0 8px 18px rgba(16,37,63,.07);
       transition:.22s ease;
       position:relative;
@@ -344,7 +348,7 @@
       font:700 .68rem/1.6 var(--font-ui);
       margin-bottom:6px;
     }
-    .topic-card h3{font-size:1.24rem;color:var(--navy)}
+    .topic-card h3{font-size:1.32rem;color:var(--navy)}
     .topic-card p{margin:5px 0 0;color:#56697e;font-size:.86rem;line-height:1.8}
     .see{display:inline-block;margin-top:8px;color:#0b806d;font:700 .82rem var(--font-ui)}
 
@@ -420,10 +424,11 @@
     .footer p,.footer a{color:#c7d7e2;font-size:.9rem;line-height:2}
     .footer a{display:block;font-family:var(--font-ui)}
     .footer .ltr{direction:ltr;text-align:left}
+    .chat-bubble,.floating-chat,.ai-widget,.purple-widget{display:none!important}
     .back-to-top{
       position:fixed;left:16px;bottom:16px;
-      width:38px;height:38px;border:0;border-radius:4px;
-      background:var(--gold);color:#172437;font:800 1rem var(--font-ui);
+      width:40px;height:40px;border:0;border-radius:7px;
+      background:var(--gold);color:#172437;font:900 1.05rem var(--font-ui);
       cursor:pointer;box-shadow:var(--shadow);
     }
 
@@ -443,10 +448,10 @@
       body{font-size:16px}
       .topbar-inner{grid-template-columns:1fr auto;min-height:66px}
       .brand-en{display:none}
-      .brand-title{font-size:1rem}
+      .brand-title{font-size:1.05rem}
       .brand-subtitle{display:none}
-      .brand-mark{width:40px;height:40px;justify-self:end}
-      .brand-mark svg{width:27px;height:27px}
+      .brand-mark{width:42px;height:42px;justify-self:end}
+      .brand-mark svg{width:28px;height:28px}
       .nav-toggle{grid-column:2}
       .hero{padding:30px 0}
       .hero-visual{min-height:210px}
@@ -725,7 +730,7 @@
 
     <section class="section">
       <div class="container contact-strip">
-        <strong>رابطہ اور علمی تجاویز</strong>
+        <strong>رابطہ، اصلاح اور علمی تجاویز</strong>
         <a href="tel:+923354910481">+92 335 4910481</a>
         <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
         <a href="contact.html">رابطہ صفحہ کھولیں</a>
@@ -754,7 +759,7 @@
         <a href="terms.html">شرائطِ استعمال</a>
       </section>
       <section>
-        <h2>رابطہ</h2>
+        <h2>رابطہ و اصلاح</h2>
         <a class="ltr" href="tel:+923354910481">+92 335 4910481</a>
         <a class="ltr" href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
         <p>یہ مرکز علمی رہنمائی کے لیے ہے؛ فتویٰ یا ذاتی شرعی مسئلے میں اہلِ علم سے رجوع کیا جائے۔</p>
