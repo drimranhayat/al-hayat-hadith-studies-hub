@@ -1,0 +1,2 @@
+Al-Hayat Hadith Studies Hub
+Built as a static Urdu Hadith studies website for GitHub Pages.

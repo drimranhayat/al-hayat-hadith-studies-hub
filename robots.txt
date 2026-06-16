@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://drimranhayat.github.io/al-hayat-hadith-studies-hub/sitemap.xml

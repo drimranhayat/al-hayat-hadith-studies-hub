@@ -1,738 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ur" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ہمارا تعارف | الحیات مرکزِ مطالعۂ حدیث</title>
-  <meta name="description" content="الحیات مرکزِ مطالعۂ حدیث کا تعارف: ایک علمی، تحقیقی اور تعلیمی پلیٹ فارم جو حدیث، علومِ حدیث، اصولِ حدیث، کتبِ حدیث اور محدثین کے مطالعے کو معیاری، مستند اور قابلِ فہم انداز میں پیش کرتا ہے۔" />
-  <meta name="keywords" content="الحیات مرکز مطالعہ حدیث, Hadith Studies, علوم حدیث, اصول حدیث, کتب حدیث, محدثین, Islamic Studies, Al-Hayat Hadith Studies Hub" />
-  <meta name="author" content="Al-Hayat Hadith Studies Hub" />
-
-  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-hadith-studies-hub/about.html" />
-
-  <meta property="og:title" content="ہمارا تعارف | الحیات مرکزِ مطالعۂ حدیث" />
-  <meta property="og:description" content="حدیث اور علومِ حدیث کے معیاری، مستند اور تحقیقی مطالعے کے لیے ایک علمی مرکز۔" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-hadith-studies-hub/about.html" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --navy:#102a43;
-      --navy-2:#183b56;
-      --teal:#0f766e;
-      --teal-soft:#e6fffb;
-      --gold:#c99a2e;
-      --gold-soft:#fff7df;
-      --cream:#fffaf0;
-      --paper:#fffdf7;
-      --ink:#1f2933;
-      --muted:#52606d;
-      --line:#eadfca;
-      --shadow:0 18px 45px rgba(16,42,67,.12);
-      --radius:22px;
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:"Noto Nastaliq Urdu", serif;
-      color:var(--ink);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(201,154,46,.10), transparent 28%),
-        radial-gradient(circle at 90% 8%, rgba(15,118,110,.10), transparent 28%),
-        linear-gradient(135deg, #fffaf0 0%, #f8efe1 100%);
-      line-height:2.15;
-    }
-
-    a{color:inherit;text-decoration:none}
-
-    .top-strip{
-      background:linear-gradient(90deg,var(--navy),var(--teal));
-      color:#fff;
-      padding:8px 18px;
-      text-align:center;
-      font-size:.92rem;
-      letter-spacing:.2px;
-    }
-
-    header{
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:rgba(255,253,247,.94);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--line);
-    }
-
-    .nav{
-      max-width:1180px;
-      margin:auto;
-      padding:14px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-
-    .brand-mark{
-      width:54px;
-      height:54px;
-      border-radius:18px;
-      background:linear-gradient(145deg,var(--navy),var(--teal));
-      display:grid;
-      place-items:center;
-      color:var(--gold-soft);
-      box-shadow:0 12px 28px rgba(16,42,67,.18);
-      border:2px solid rgba(201,154,46,.35);
-      font-family:"Amiri", serif;
-      font-weight:700;
-      font-size:1.55rem;
-    }
-
-    .brand-title{
-      display:flex;
-      flex-direction:column;
-      gap:0;
-    }
-
-    .brand-title strong{
-      color:var(--navy);
-      font-size:1.18rem;
-      line-height:1.6;
-    }
-
-    .brand-title span{
-      direction:ltr;
-      text-align:right;
-      font-family:Georgia, serif;
-      color:var(--teal);
-      font-size:.84rem;
-      line-height:1.3;
-    }
-
-    nav ul{
-      margin:0;
-      padding:0;
-      list-style:none;
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-
-    nav a{
-      display:inline-flex;
-      padding:9px 13px;
-      border-radius:999px;
-      color:var(--navy-2);
-      font-weight:700;
-      font-size:.93rem;
-      transition:.25s ease;
-    }
-
-    nav a:hover,
-    nav a.active{
-      background:var(--teal-soft);
-      color:var(--teal);
-      box-shadow:inset 0 0 0 1px rgba(15,118,110,.16);
-    }
-
-    .hero{
-      max-width:1180px;
-      margin:34px auto 0;
-      padding:0 18px;
-    }
-
-    .hero-card{
-      position:relative;
-      overflow:hidden;
-      border-radius:32px;
-      background:
-        linear-gradient(135deg, rgba(16,42,67,.96), rgba(15,118,110,.92)),
-        url("assets/images/islamic-pattern.png");
-      color:#fff;
-      padding:54px 36px;
-      box-shadow:var(--shadow);
-      border:1px solid rgba(201,154,46,.35);
-    }
-
-    .hero-card:before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        radial-gradient(circle at 18% 20%, rgba(255,247,223,.18), transparent 22%),
-        radial-gradient(circle at 82% 70%, rgba(201,154,46,.20), transparent 27%);
-      pointer-events:none;
-    }
-
-    .hero-content{
-      position:relative;
-      max-width:870px;
-    }
-
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.22);
-      color:#fff7df;
-      padding:7px 14px;
-      border-radius:999px;
-      font-size:.92rem;
-      margin-bottom:16px;
-    }
-
-    h1{
-      margin:0 0 18px;
-      color:#fff;
-      font-size:clamp(2rem,4vw,4rem);
-      line-height:1.75;
-      letter-spacing:-.5px;
-    }
-
-    .hero p{
-      margin:0;
-      color:#f8fafc;
-      font-size:1.08rem;
-      max-width:780px;
-    }
-
-    .container{
-      max-width:1180px;
-      margin:26px auto 60px;
-      padding:0 18px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:22px;
-      align-items:start;
-    }
-
-    .card{
-      background:rgba(255,253,247,.92);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-      margin-bottom:22px;
-    }
-
-    .card h2{
-      color:var(--navy);
-      margin:0 0 14px;
-      font-size:1.65rem;
-      line-height:1.7;
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-
-    .card h2:before{
-      content:"";
-      width:9px;
-      height:38px;
-      border-radius:12px;
-      background:linear-gradient(var(--gold),var(--teal));
-      display:inline-block;
-      flex:0 0 auto;
-    }
-
-    .card p{
-      margin:0 0 14px;
-      color:var(--ink);
-      font-size:1rem;
-    }
-
-    .lead{
-      font-size:1.06rem!important;
-      color:var(--navy-2)!important;
-    }
-
-    .feature-list{
-      display:grid;
-      gap:12px;
-      margin-top:14px;
-    }
-
-    .feature{
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-      padding:14px 16px;
-      background:linear-gradient(90deg, rgba(230,255,251,.74), rgba(255,247,223,.56));
-      border:1px solid rgba(15,118,110,.14);
-      border-radius:18px;
-    }
-
-    .feature .icon{
-      width:34px;
-      height:34px;
-      border-radius:12px;
-      background:#fff;
-      display:grid;
-      place-items:center;
-      color:var(--teal);
-      font-family:"Amiri", serif;
-      font-weight:700;
-      flex:0 0 auto;
-      box-shadow:0 8px 18px rgba(16,42,67,.08);
-    }
-
-    .feature strong{
-      display:block;
-      color:var(--navy);
-      margin-bottom:2px;
-    }
-
-    .feature span{
-      color:var(--muted);
-      font-size:.95rem;
-    }
-
-    .quote{
-      background:linear-gradient(135deg,var(--gold-soft),#fff);
-      border-right:5px solid var(--gold);
-      color:var(--navy);
-      padding:18px 20px;
-      border-radius:18px;
-      margin-top:18px;
-      font-weight:700;
-    }
-
-    .side-card{
-      background:#fffdf7;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:24px;
-      margin-bottom:22px;
-    }
-
-    .side-card h3{
-      margin:0 0 14px;
-      color:var(--teal);
-      font-size:1.28rem;
-    }
-
-    .mini-list{
-      margin:0;
-      padding:0;
-      list-style:none;
-      display:grid;
-      gap:10px;
-    }
-
-    .mini-list li{
-      padding:11px 13px;
-      background:#fff;
-      border:1px solid #f0e4cd;
-      border-radius:15px;
-      color:var(--navy-2);
-      font-weight:700;
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-
-    .stat{
-      text-align:center;
-      background:linear-gradient(145deg,#fff,var(--gold-soft));
-      border:1px solid #f0e4cd;
-      border-radius:18px;
-      padding:18px 10px;
-    }
-
-    .stat strong{
-      display:block;
-      font-family:"Amiri", serif;
-      color:var(--navy);
-      font-size:1.8rem;
-      line-height:1.2;
-    }
-
-    .stat span{
-      color:var(--muted);
-      font-size:.88rem;
-    }
-
-    .pathways{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-      margin-top:16px;
-    }
-
-    .pathway{
-      background:#fff;
-      border:1px solid #f0e4cd;
-      border-radius:18px;
-      padding:18px;
-      transition:.25s ease;
-    }
-
-    .pathway:hover{
-      transform:translateY(-3px);
-      box-shadow:0 14px 28px rgba(16,42,67,.10);
-      border-color:rgba(201,154,46,.45);
-    }
-
-    .pathway strong{
-      color:var(--navy);
-      display:block;
-      margin-bottom:8px;
-    }
-
-    .pathway p{
-      color:var(--muted);
-      font-size:.92rem;
-      margin:0;
-    }
-
-    .cta{
-      background:linear-gradient(135deg,var(--navy),var(--teal));
-      color:#fff;
-      border-radius:28px;
-      padding:30px;
-      box-shadow:var(--shadow);
-      border:1px solid rgba(201,154,46,.35);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .cta h2{
-      margin:0 0 6px;
-      color:#fff;
-      font-size:1.55rem;
-    }
-
-    .cta p{
-      margin:0;
-      color:#edfdfb;
-    }
-
-    .btns{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:11px 18px;
-      border-radius:999px;
-      font-weight:800;
-      transition:.25s ease;
-      border:1px solid rgba(255,255,255,.25);
-    }
-
-    .btn.primary{
-      background:var(--gold);
-      color:#102a43;
-    }
-
-    .btn.secondary{
-      background:rgba(255,255,255,.10);
-      color:#fff;
-    }
-
-    .btn:hover{
-      transform:translateY(-2px);
-      box-shadow:0 10px 22px rgba(0,0,0,.16);
-    }
-
-    footer{
-      background:#0b1f33;
-      color:#d9e2ec;
-      padding:32px 18px;
-      margin-top:48px;
-    }
-
-    .footer-inner{
-      max-width:1180px;
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      flex-wrap:wrap;
-    }
-
-    .footer-inner strong{
-      color:#fff7df;
-    }
-
-    .footer-links{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .footer-links a{
-      color:#d9e2ec;
-      padding:7px 10px;
-      border-radius:999px;
-    }
-
-    .footer-links a:hover{
-      background:rgba(255,255,255,.08);
-      color:#fff;
-    }
-
-    @media(max-width:900px){
-      .grid{grid-template-columns:1fr}
-      .pathways{grid-template-columns:1fr}
-      .nav{align-items:flex-start;flex-direction:column}
-      nav ul{justify-content:flex-start}
-      .hero-card{padding:38px 24px}
-    }
-
-    @media(max-width:560px){
-      body{line-height:2.05}
-      .brand-mark{width:48px;height:48px}
-      .brand-title strong{font-size:1rem}
-      nav a{font-size:.86rem;padding:8px 10px}
-      .card,.side-card{padding:21px}
-      .stats{grid-template-columns:1fr}
-      .cta{padding:24px}
-    }
-  </style>
+  <meta name="description" content="Al-Hayat Hadith Studies Hub mission and learning model.">
+  <meta property="og:title" content="ہمارا تعارف | الحیات مرکزِ مطالعۂ حدیث">
+  <meta property="og:description" content="Al-Hayat Hadith Studies Hub mission and learning model.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ur_PK">
+  <meta name="theme-color" content="#10253f">
+  <link rel="canonical" href="about.html">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body>
-  <div class="top-strip">
-    حدیث، علومِ حدیث، اصولِ حدیث اور محدثین کے مستند مطالعے کے لیے ایک علمی و تحقیقی مرکز
+<body data-current="about">
+<header class="site-header">
+  <a class="skip-link" href="#main">مرکزی مواد پر جائیں</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
+      <span class="brand-mark">ح</span>
+      <span class="brand-text"><strong>الحیات مرکزِ مطالعۂ حدیث</strong><small>Al-Hayat Hadith Studies Hub</small></span>
+    </a>
+    <button class="icon-button nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="مینو کھولیں">☰</button>
+    <nav class="primary-nav" id="primaryNav" aria-label="مرکزی نیویگیشن">
+      <a href="index.html" class="nav-link">ہوم</a>
+<a href="books.html" class="nav-link">کتبِ حدیث</a>
+<a href="hadith-sciences.html" class="nav-link">علومِ حدیث</a>
+<a href="topic-index.html" class="nav-link">موضوعات</a>
+<a href="search.html" class="nav-link">تلاش</a>
+<a href="glossary.html" class="nav-link">Glossary</a>
+<a href="mcqs/" class="nav-link">کوئز</a>
+<a href="verification-lab/" class="nav-link">Verification Lab</a>
+<a href="dashboard.html" class="nav-link">Dashboard</a>
+<a href="academic-policy.html" class="nav-link">Policy</a>
+      <div class="mega">
+        <button class="mega-trigger" type="button" aria-expanded="false">نصاب</button>
+        <div class="mega-panel" role="group" aria-label="اہم ابواب">
+          <a href="sahih-hadith/"><span>صحیح حدیث</span><small>Level 3</small></a>
+<a href="daeef-hadith/"><span>ضعیف حدیث</span><small>Level 3</small></a>
+<a href="takhrij-hadith/"><span>تخریج الحدیث</span><small>Level 6</small></a>
+<a href="jarh-tadeel/"><span>الجرح والتعدیل</span><small>Level 5</small></a>
+<a href="ilal-hadith/"><span>علل الحدیث</span><small>Level 5</small></a>
+<a href="responsibility-engine/"><span>ذمہ دارانہ استعمال</span><small>Level 1</small></a>
+        </div>
+      </div>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false">آواز بند</button>
+    </nav>
   </div>
-
-  <header>
-    <div class="nav">
-      <a class="brand" href="index.html" aria-label="الحیات مرکزِ مطالعۂ حدیث">
-        <div class="brand-mark">ح</div>
-        <div class="brand-title">
-          <strong>الحیات مرکزِ مطالعۂ حدیث</strong>
-          <span>Al-Hayat Hadith Studies Hub</span>
-        </div>
-      </a>
-
-      <nav aria-label="مرکزی فہرست">
-        <ul>
-          <li><a href="index.html">صفحۂ اوّل</a></li>
-          <li><a class="active" href="about.html">تعارف</a></li>
-          <li><a href="books.html">کتبِ حدیث</a></li>
-          <li><a href="hadith-sciences.html">علومِ حدیث</a></li>
-          <li><a href="scholars.html">محدثین</a></li>
-          <li><a href="research.html">تحقیق</a></li>
-          <li><a href="contact.html">رابطہ</a></li>
-        </ul>
-      </nav>
+</header>
+<main id="main">
+  <section class="page-hero compact section-pattern">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">ہوم</a> / ہمارا تعارف</p>
+      <h1>ہمارا تعارف</h1>
+      <p>Al-Hayat Hadith Studies Hub mission and learning model.</p>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-card">
-        <div class="hero-content">
-          <div class="eyebrow">ہمارا تعارف</div>
-          <h1>حدیث کے مطالعے کو مستند، منظم اور قابلِ فہم بنانا</h1>
-          <p>
-            الحیات مرکزِ مطالعۂ حدیث ایک علمی، تعلیمی اور تحقیقی پلیٹ فارم ہے جس کا مقصد حدیثِ نبوی ﷺ،
-            علومِ حدیث، اصولِ حدیث، کتبِ حدیث اور محدثین کی خدمات کو باوقار، مستند اور سہل انداز میں
-            طلبہ، اساتذہ، محققین اور عام قارئین تک پہنچانا ہے۔
-          </p>
-        </div>
-      </div>
+  </section>
+  <section class="container content-section readable">
+    <div class="prose-panel">
+  <h2>مرکزی مشن</h2>
+  <p>یہ website اردو میں مطالعۂ حدیث، علوم حدیث، learning، testing، verification، research، اور progress tracking کا منظم static platform ہے۔</p>
+  <div class="callout">یہ first version مکمل page structure، filters، quiz engine، dashboard، diagrams، placeholders، اور academic policy کے ساتھ تیار ہے۔ تفصیلی scholarly content مستند مصادر کے ساتھ مرحلہ وار شامل کیا جائے گا۔</div>
+  <h2>کن کے لیے؟</h2>
+  <p>بچے، عام قاری، طالب علم، استاد، خطیب، محقق، اور عالم / متخصص کے لیے الگ learning pathways بنائے گئے ہیں۔</p>
+</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h2>الحیات مرکزِ مطالعۂ حدیث</h2>
+      <p>حدیث کو پڑھیں، سمجھیں، پرکھیں، مشق کریں، اور ذمہ داری سے آگے پہنچائیں۔</p>
     </section>
-
-    <section class="container">
-      <div class="grid">
-        <div>
-          <article class="card">
-            <h2>ہمارا مقصد</h2>
-            <p class="lead">
-              ہمارا بنیادی مقصد یہ ہے کہ حدیث اور علومِ حدیث کا مطالعہ محض معلوماتی سطح تک محدود نہ رہے،
-              بلکہ اسے علمی ترتیب، تحقیقی احتیاط، دینی احترام اور تعلیمی سہولت کے ساتھ پیش کیا جائے۔
-            </p>
-            <p>
-              اس پلیٹ فارم پر مواد اس انداز میں مرتب کیا جائے گا کہ نوآموز طالب علم بنیادی اصطلاحات سمجھ سکے،
-              سنجیدہ طالب علم کتب و مباحث کی علمی ساخت تک پہنچ سکے، اور محقق کو موضوعات، مصادر اور تحقیقی
-              سمتوں تک رسائی حاصل ہو۔
-            </p>
-            <div class="quote">
-              ہمارا نصب العین: حدیث کا مطالعہ احترام، تحقیق، وضاحت اور علمی دیانت کے ساتھ۔
-            </div>
-          </article>
-
-          <article class="card">
-            <h2>ہم کیا پیش کریں گے؟</h2>
-            <div class="feature-list">
-              <div class="feature">
-                <div class="icon">1</div>
-                <div>
-                  <strong>حدیث کا تعارفی مطالعہ</strong>
-                  <span>حدیث، سنت، خبر، اثر، روایت، درایت، سند اور متن جیسے بنیادی تصورات کی آسان مگر علمی وضاحت۔</span>
-                </div>
-              </div>
-
-              <div class="feature">
-                <div class="icon">2</div>
-                <div>
-                  <strong>علومِ حدیث اور اصولِ حدیث</strong>
-                  <span>صحت و ضعف، جرح و تعدیل، اتصالِ سند، عللِ حدیث، روایت بالمعنی اور قبول و رد کے اصول۔</span>
-                </div>
-              </div>
-
-              <div class="feature">
-                <div class="icon">3</div>
-                <div>
-                  <strong>کتبِ حدیث کا منظم تعارف</strong>
-                  <span>صحاح، سنن، مسانید، معاجم، موطآت اور دیگر اہم حدیثی مجموعوں کا پس منظر اور علمی مقام۔</span>
-                </div>
-              </div>
-
-              <div class="feature">
-                <div class="icon">4</div>
-                <div>
-                  <strong>محدثین کی علمی خدمات</strong>
-                  <span>ائمۂ حدیث، رواۃ، ناقدینِ حدیث اور شارحین کی خدمات کا متوازن اور باادب تعارف۔</span>
-                </div>
-              </div>
-
-              <div class="feature">
-                <div class="icon">5</div>
-                <div>
-                  <strong>تحقیقی و تدریسی رہنمائی</strong>
-                  <span>طلبہ، اساتذہ اور محققین کے لیے موضوعاتی رہنمائی، مطالعہ منصوبے، اصطلاحی فہرستیں اور علمی خاکے۔</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <h2>ہمارا علمی مزاج</h2>
-            <p>
-              الحیات مرکزِ مطالعۂ حدیث میں مواد مرتب کرتے وقت دینی ادب، علمی احتیاط، مستند حوالہ، واضح
-              ترتیب اور معتدل اسلوب کو بنیادی اصول بنایا جائے گا۔ ہمارا مقصد اختلافی مباحث کو سنسنی خیز
-              انداز میں پیش کرنا نہیں، بلکہ علمی پس منظر، اصولی بنیاد اور معتبر اہلِ علم کی روشنی میں
-              سمجھنے میں مدد دینا ہے۔
-            </p>
-            <p>
-              یہاں زبان کو غیر ضروری پیچیدگی سے پاک رکھا جائے گا، مگر علمی معیار کو کمزور نہیں ہونے دیا جائے گا۔
-              اردو اسلوب شستہ، فطری، باوقار اور تعلیمی ہوگا تاکہ مواد عالمی معیار کے اسلامی مطالعاتی پلیٹ فارم
-              کے شایانِ شان محسوس ہو۔
-            </p>
-          </article>
-
-          <article class="card">
-            <h2>کن لوگوں کے لیے؟</h2>
-            <div class="pathways">
-              <div class="pathway">
-                <strong>طلبہ</strong>
-                <p>بنیادی اصطلاحات، کتبِ حدیث، اصولِ حدیث اور امتحانی یا تحقیقی تیاری کے لیے منظم رہنمائی۔</p>
-              </div>
-              <div class="pathway">
-                <strong>اساتذہ</strong>
-                <p>لیکچر پلان، موضوعاتی ترتیب، کلاس ڈسکشن پوائنٹس اور تدریسی معاون مواد کے لیے ایک مرکز۔</p>
-              </div>
-              <div class="pathway">
-                <strong>محققین</strong>
-                <p>تحقیقی سمت، مصادر، اصطلاحات، تاریخی پس منظر اور علمی مباحث تک رسائی کا منظم راستہ۔</p>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <aside>
-          <div class="side-card">
-            <h3>مرکزی توجہ</h3>
-            <ul class="mini-list">
-              <li>حدیثِ نبوی ﷺ کا تعارفی مطالعہ</li>
-              <li>علومِ حدیث اور اصولِ حدیث</li>
-              <li>کتبِ حدیث کا علمی تعارف</li>
-              <li>ائمہ و محدثین کی خدمات</li>
-              <li>تحقیقی، تدریسی اور مطالعاتی رہنمائی</li>
-            </ul>
-          </div>
-
-          <div class="side-card">
-            <h3>علمی اصول</h3>
-            <div class="stats">
-              <div class="stat">
-                <strong>01</strong>
-                <span>استناد</span>
-              </div>
-              <div class="stat">
-                <strong>02</strong>
-                <span>تحقیق</span>
-              </div>
-              <div class="stat">
-                <strong>03</strong>
-                <span>وضاحت</span>
-              </div>
-              <div class="stat">
-                <strong>04</strong>
-                <span>ادب</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="side-card">
-            <h3>انگریزی شناخت</h3>
-            <p dir="ltr" style="font-family:Georgia,serif;line-height:1.8;text-align:left;color:#183b56;margin:0;">
-              <strong>Al-Hayat Hadith Studies Hub</strong><br>
-              A scholarly learning and research platform for Hadith, Hadith Sciences, classical collections, and the legacy of Hadith scholars.
-            </p>
-          </div>
-        </aside>
-      </div>
-
-      <div class="cta">
-        <div>
-          <h2>مطالعہ کا اگلا قدم</h2>
-          <p>حدیثی ذخیرے کی بنیاد سمجھنے کے لیے کتبِ حدیث اور علومِ حدیث کے صفحات سے آغاز کریں۔</p>
-        </div>
-        <div class="btns">
-          <a class="btn primary" href="books.html">کتبِ حدیث دیکھیں</a>
-          <a class="btn secondary" href="hadith-sciences.html">علومِ حدیث پڑھیں</a>
-        </div>
-      </div>
+    <section>
+      <h2>اہم روابط</h2>
+      <a href="topic-index.html">موضوعات</a>
+      <a href="books.html">کتبِ حدیث</a>
+      <a href="hadith-sciences.html">علومِ حدیث</a>
+      <a href="hadith-collections.html">مجموعات</a>
+      <a href="scholars.html">محدثین</a>
+      <a href="research.html">تحقیق</a>
+      <a href="references.html">مصادر</a>
+      <a href="search.html">تلاش</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="mcqs/">کثیر الانتخابی سوالات</a>
+      <a href="verification-lab/">Verification Lab</a>
+      <a href="academic-policy.html">Academic Integrity Policy</a>
+      <a href="source-policy.html">Source Policy</a>
+      <a href="faq.html">FAQ</a>
     </section>
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-      <div>
-        <strong>الحیات مرکزِ مطالعۂ حدیث</strong><br>
-        حدیث اور علومِ حدیث کے مستند، منظم اور باوقار مطالعے کے لیے۔
-      </div>
-      <div class="footer-links">
-        <a href="index.html">صفحۂ اوّل</a>
-        <a href="about.html">تعارف</a>
-        <a href="contact.html">رابطہ</a>
-      </div>
-    </div>
-  </footer>
+    <section>
+      <h2>علمی اصول</h2>
+      <p>ہم خود سے احادیث پر مستقل حکم نہیں لگاتے؛ مستند مصادر اور اہلِ علم کے حوالہ جات کے ساتھ مواد مرحلہ وار شامل کیا جائے گا۔</p>
+    </section>
+  </div>
+</footer>
+<button class="back-to-top" type="button" data-back-to-top aria-label="اوپر جائیں">↑</button>
+<script src="assets/data/topics.js"></script>
+<script src="assets/data/mcqs.js"></script>
+<script src="assets/data/study.js"></script>
+<script src="assets/data/glossary.js"></script>
+<script src="assets/data/books.js"></script>
+<script src="assets/data/templates.js"></script>
+<script src="assets/data/site.js"></script>
+<script src="assets/data/progress.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

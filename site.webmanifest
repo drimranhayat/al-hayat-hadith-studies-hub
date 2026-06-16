@@ -1,0 +1,11 @@
+{
+  "name": "Al-Hayat Hadith Studies Hub",
+  "short_name": "Al-Hayat Hadith",
+  "description": "A static Urdu Hadith studies learning, testing, verification, research, and progress-tracking website.",
+  "lang": "ur",
+  "dir": "rtl",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fbf6ea",
+  "theme_color": "#10253f"
+}
