@@ -1,0 +1,34 @@
+/* === Al-Hayat bilingual direction fix === */
+[dir="ltr"],
+.ltr,
+.en,
+.english,
+.latin,
+.url,
+.email,
+.phone,
+.brand-en,
+.eyebrow,
+[lang="en"]{
+  direction:ltr !important;
+  unicode-bidi:isolate !important;
+}
+
+.brand-en,
+.ltr-block,
+.english-block{
+  text-align:left !important;
+}
+
+.en-inline,
+bdi[dir="ltr"]{
+  direction:ltr !important;
+  unicode-bidi:isolate !important;
+  display:inline-block;
+  font-family:var(--font-ui, "Segoe UI", Tahoma, sans-serif) !important;
+  letter-spacing:.01em;
+}
+
+.mixed-text{
+  unicode-bidi:plaintext;
+}
